@@ -63,13 +63,9 @@ body.hours {
   background: #fff;
 }
 
-body.days {
+body.bg_white {
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#faf9f9));
   background: linear-gradient(180deg, #fff, #faf9f9);
-}
-
-body.weekend {
-  background: #fff;
 }
 
 .main_container {
@@ -1652,24 +1648,33 @@ body.weekend {
   color: #002AC0;
 }
 
+.footer_container {
+  max-width: 1600px;
+}
+
 .footer {
   background-color: #36469A;
   font-size: 1px;
+  padding: 40em 120em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  position: relative;
 }
 
-.footer.days {
-  margin-top: 40em;
-}
-
-@media only screen and (max-width: 768px) {
-  .footer.days {
-    margin-top: 13em;
+@media only screen and (min-width: 1920px) {
+  .footer {
+    font-size: 1.2px;
   }
 }
 
-@media only screen and (max-width: 560px) {
-  .footer.days {
-    margin-top: 0em;
+@media only screen and (max-width: 1680px) {
+  .footer {
+    font-size: 1px;
   }
 }
 
@@ -1681,67 +1686,107 @@ body.weekend {
 
 @media only screen and (max-width: 1024px) {
   .footer {
-    font-size: .5px;
+    font-size: .6px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .footer {
-    font-size: 1px;
+    font-size: .5px;
+    padding-top: 150em;
+    padding-bottom: 100em;
   }
 }
 
 @media only screen and (max-width: 560px) {
   .footer {
-    font-size: .6px;
+    font-size: .35px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .footer {
+    font-size: .4px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 150em 100em;
   }
 }
 
 @media only screen and (max-width: 319px) {
   .footer {
-    padding: 3px 12px;
     font-size: .3px;
   }
 }
 
-.footer_container {
-  padding: 0px 50px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-  .footer_container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    padding-bottom: 20px;
-  }
-}
-
-.footer_container p {
+.footer p {
   font-size: 36em;
   color: #fff;
 }
 
-.footer_container h2 {
+.footer p span {
+  color: #F83F05;
+}
+
+.footer h2 {
   font-size: 36em;
+  text-transform: uppercase;
 }
 
-.footer_container .footer_author {
-  line-height: 2;
+.footer .footer_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.footer_container .footer_social .footer_social-logo {
+@media only screen and (max-width: 768px) {
+  .footer .footer_menu {
+    position: absolute;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+    left: 20px;
+  }
+}
+
+.footer .footer_menu a {
+  font-size: 36em;
+  text-decoration: none;
+  color: #020812;
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+}
+
+.footer .footer_menu a:hover {
+  color: #F83F05;
+}
+
+.footer .footer_social .footer_social-logo {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
 
-.footer_container .footer_social .footer_social-logo img {
+.footer .footer_social .footer_social-logo img {
   width: 60em;
 }
 
@@ -1826,11 +1871,31 @@ body.weekend {
   color: #191818;
 }
 
-.days_forecast-detail.margin_top {
-  margin-top: 50px;
+.day_forecast-tables.tables_translate {
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box {
+@media only screen and (max-width: 768px) {
+  .day_forecast-tables.tables_translate {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+.day_forecast-tables .day_forecast-table-box:first-child .days_forecast-detail {
+  margin-top: 0;
+}
+
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail {
+  margin-top: 70em;
+}
+
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail.indicator_none {
+  display: none;
+}
+
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1841,7 +1906,7 @@ body.weekend {
 }
 
 @media only screen and (max-width: 560px) {
-  .day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box {
+  .day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1849,7 +1914,7 @@ body.weekend {
   }
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .hide_indicator {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .hide_indicator {
   position: absolute;
   top: 0px;
   right: 0;
@@ -1859,12 +1924,12 @@ body.weekend {
 }
 
 @media only screen and (max-width: 560px) {
-  .day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index:nth-child(2) {
+  .day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index:nth-child(2) {
     margin-top: 120em;
   }
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1875,21 +1940,21 @@ body.weekend {
 }
 
 @media only screen and (max-width: 560px) {
-  .day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header {
+  .day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header h2 {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header h2 {
   position: absolute;
   top: -50%;
   font-size: 36em;
   color: #333;
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header-part .temprature_info {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header-part .temprature_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1898,20 +1963,20 @@ body.weekend {
           align-items: center;
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header-part .temprature_info h1 {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header-part .temprature_info h1 {
   margin-right: .2em;
   font-size: 100em;
   line-height: 0;
   color: #F83F05;
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header-part .temprature_info img {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header-part .temprature_info img {
   width: 100em;
   height: 100%;
   margin-right: 30em;
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header-part-small {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header-part-small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1920,28 +1985,28 @@ body.weekend {
           align-items: center;
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header-part-small p {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header-part-small p {
   font-size: 36em;
   color: #F83F05;
   margin-left: .2em;
   line-height: 0;
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header-part-small img {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-header-part-small img {
   width: 36em;
   height: 100%;
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-description {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-description {
   max-width: 70%;
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-description p {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-description p {
   font-size: 36em;
   color: #191818;
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1956,7 +2021,7 @@ body.weekend {
 }
 
 @media only screen and (max-width: 768px) {
-  .day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator {
+  .day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1965,7 +2030,7 @@ body.weekend {
 }
 
 @media only screen and (max-width: 560px) {
-  .day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator {
+  .day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator {
     -webkit-box-shadow: none;
             box-shadow: none;
     -webkit-box-orient: horizontal;
@@ -1975,7 +2040,7 @@ body.weekend {
   }
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator::after {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -1985,7 +2050,7 @@ body.weekend {
   width: 90%;
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1995,7 +2060,7 @@ body.weekend {
 }
 
 @media only screen and (max-width: 768px) {
-  .day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part {
+  .day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2005,7 +2070,7 @@ body.weekend {
   }
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-icons {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2022,47 +2087,47 @@ body.weekend {
 }
 
 @media only screen and (max-width: 768px) {
-  .day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-icons {
+  .day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-icons {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-icons .each_part-icon {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-icons .each_part-icon {
   width: 48em;
 }
 
 @media only screen and (max-width: 768px) {
-  .day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-icons .each_part-icon {
+  .day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-icons .each_part-icon {
     width: 75em;
   }
 }
 
 @media only screen and (max-width: 560px) {
-  .day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-icons .each_part-icon {
+  .day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-icons .each_part-icon {
     width: 48em;
   }
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-icons .each_part-icon:first-child {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-icons .each_part-icon:first-child {
   margin-bottom: 20px;
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-icons .each_part-icon:last-child {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-icons .each_part-icon:last-child {
   margin-top: 20px;
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-info .each_part-info-text p {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-info .each_part-info-text p {
   color: #191818;
   font-size: 36em;
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-info .each_part-info-text h1 {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-info .each_part-info-text h1 {
   font-size: 48em;
   color: #F83F05;
 }
 
-.day_forecast-tables .day_forecast-table-box .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-info .each_part-info-text h3 {
+.day_forecast-tables .day_forecast-table-box .days_forecast-detail .days_forecast-detail-header-box .days_forecast-detail-header-index .days_forecast-detail-indicator-part .each_part-info .each_part-info-text h3 {
   font-weight: 400;
   font-size: 36em;
   color: #F83F05;
@@ -2153,6 +2218,7 @@ body.weekend {
 }
 
 .weekends_forecast {
+  font-size: 1.2px;
   padding: 0px 1.5rem;
   color: #191818;
   background-color: #fff;
@@ -2161,146 +2227,352 @@ body.weekend {
           box-shadow: 0px 0px 50px 2px #020812;
 }
 
+@media only screen and (min-width: 1920px) {
+  .weekends_forecast {
+    font-size: 1.2px;
+  }
+}
+
+@media only screen and (max-width: 1680px) {
+  .weekends_forecast {
+    font-size: 1px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .weekends_forecast {
+    font-size: .9px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .weekends_forecast {
+    font-size: .7px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .weekends_forecast {
+    font-size: .4px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .weekends_forecast {
+    font-size: .5px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .weekends_forecast {
+    font-size: .4px;
+  }
+}
+
+@media only screen and (max-width: 319px) {
+  .weekends_forecast {
+    font-size: .3px;
+  }
+}
+
+.weekends_forecast .weekends_forecast-header {
+  padding-bottom: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.weekends_forecast .weekends_forecast-header:first-child {
+  border: none;
+  padding-bottom: 30em;
+}
+
 .weekends_forecast .weekends_forecast-header h2 {
-  font-size: 2rem;
-  color: #191818;
-  font-weight: 400;
+  font-size: 36em;
+  color: #000;
+  font-weight: normal;
 }
 
 .weekends_forecast .weekends_forecast-header h2 span {
+  font-weight: normal;
   color: #F83F05;
-  font-size: 3rem;
+  font-size: 1.3em;
+}
+
+.weekends_forecast .weekends_forecast-header h3 {
+  font-size: 36em;
+  color: #00B3DF;
 }
 
 .weekends_forecast .weekends_forecast-header p {
-  font-size: 1.5rem;
-  color: #5C56A7;
+  font-size: 36em;
+  color: #191818;
 }
 
-.weekends_forecast-detail h2 {
-  font-size: 2rem;
-  font-weight: 400;
+.weekend_forecast-tables.tables_translate {
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
 }
 
-.weekends_forecast-detail .main_indicators {
+@media only screen and (max-width: 768px) {
+  .weekend_forecast-tables.tables_translate {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box:first-child .weekends_forecast-detail {
+  margin-top: 0;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail {
+  margin-top: 70em;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail.indicator_none {
+  display: none;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
-.weekends_forecast-detail .main_indicators .main_indicators-part h2 {
-  font-size: 2rem;
-  color: #000;
+@media only screen and (max-width: 560px) {
+  .weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
-.weekends_forecast-detail .main_indicators .main_indicators-part-temp {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 2fr;
-      grid-template-columns: 1fr 1fr 2fr;
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .hide_indicator {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 40em;
+  height: 18em;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 560px) {
+  .weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index:nth-child(2) {
+    margin-top: 120em;
+  }
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+@media only screen and (max-width: 560px) {
+  .weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-header h2 {
+  position: absolute;
+  top: -50%;
+  font-size: 36em;
+  color: #333;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-header-part .temprature_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-gap: 0;
 }
 
-.weekends_forecast-detail .main_indicators .main_indicators-part-temp h1 {
-  font-size: 3rem;
-  color: #F83F05;
-  font-weight: normal;
-  text-align: center;
-}
-
-.weekends_forecast-detail .main_indicators .main_indicators-part-temp img {
-  width: 4rem;
-}
-
-.weekends_forecast-detail .main_indicators .main_indicators-part-temp .humidity_wind p {
-  font-size: 2rem;
-  color: #F83F05;
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-header-part .temprature_info h1 {
+  margin-right: .2em;
+  font-size: 100em;
   line-height: 0;
+  color: #F83F05;
 }
 
-.weekends_forecast-detail .main_indicators .main_indicators-part-temp .humidity_wind p i {
-  color: #002AC0;
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-header-part .temprature_info img {
+  width: 100em;
+  height: 100%;
+  margin-right: 30em;
 }
 
-.weekends_forecast-detail .main_indicators .main_indicators-part a img {
-  width: 2rem;
-  -webkit-transform: translateY(2.5rem);
-          transform: translateY(2.5rem);
-}
-
-.weekends_forecast-detail .descriptions {
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-header-part-small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 82%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.weekends_forecast-detail .descriptions .descriptions_part {
-  width: 40%;
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-header-part-small p {
+  font-size: 36em;
+  color: #F83F05;
+  margin-left: .2em;
+  line-height: 0;
 }
 
-.weekends_forecast-detail .descriptions .descriptions_part p {
-  font-size: 1.5rem;
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-header-part-small img {
+  width: 36em;
+  height: 100%;
 }
 
-.weekends_forecast-detail .indicators_addition .indicators_addition-part {
-  padding: 0 3rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (17rem)[2];
-      grid-template-columns: repeat(2, 17rem);
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-description {
+  max-width: 70%;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-description p {
+  font-size: 36em;
+  color: #191818;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   border: 1px solid #ccc;
-  margin-bottom: 2rem;
+  margin: 0px 20px;
+  padding: 0px 10px;
+  border-radius: 25em;
 }
 
-.weekends_forecast-detail .indicators_addition .indicators_addition-part-index {
+@media only screen and (max-width: 768px) {
+  .weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  right: 5%;
+  background-color: #ccc;
+  width: 90%;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator-part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.weekends_forecast-detail .indicators_addition .indicators_addition-part-index-text h1 {
-  font-size: 3rem;
-  font-weight: normal;
-  color: #F83F05;
-  margin-left: 1rem;
+@media only screen and (max-width: 768px) {
+  .weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator-part {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.weekends_forecast-detail .indicators_addition .indicators_addition-part-index-text p {
-  font-size: 2rem;
-  color: #F83F05;
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator-part .each_part-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 75%;
+  -webkit-transform: translateY(45px);
+          transform: translateY(45px);
+  margin-right: 25em;
 }
 
-.weekends_forecast-detail .indicators_addition .indicators_addition-part-index img {
-  margin-right: 3rem;
-  width: 2rem;
+@media only screen and (max-width: 768px) {
+  .weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator-part .each_part-icons {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
-.weekends_forecast-tables .weekends_forecast-tables-header {
-  font-size: 3rem;
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator-part .each_part-icons .each_part-icon {
+  width: 48em;
+}
+
+@media only screen and (max-width: 768px) {
+  .weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator-part .each_part-icons .each_part-icon {
+    width: 75em;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator-part .each_part-icons .each_part-icon {
+    width: 48em;
+  }
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator-part .each_part-icons .each_part-icon:first-child {
+  margin-bottom: 20px;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator-part .each_part-icons .each_part-icon:last-child {
+  margin-top: 20px;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator-part .each_part-info .each_part-info-text p {
   color: #191818;
-  font-weight: 400;
-  border-bottom: 1px solid #ccc;
-  padding: 2rem 0;
-  margin: 0;
+  font-size: 36em;
 }
 
-.weekends_forecast-tables .weekends_forecast-table {
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator-part .each_part-info .each_part-info-text h1 {
+  font-size: 48em;
+  color: #F83F05;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekends_forecast-detail .weekends_forecast-detail-header-box .weekends_forecast-detail-header-index .weekends_forecast-detail-indicator-part .each_part-info .each_part-info-text h3 {
+  font-weight: 400;
+  font-size: 36em;
+  color: #F83F05;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekend_forecast-table {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2311,25 +2583,64 @@ body.weekend {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #ccc;
+  padding: 10px 0;
 }
 
-.weekends_forecast-tables .weekends_forecast-table h2 {
+.weekend_forecast-tables .weekend_forecast-table-box .weekend_forecast-table.table_none {
+  display: none;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekend_forecast-table .weekend_forecast-table-part:nth-child(5) img, .weekend_forecast-tables .weekend_forecast-table-box .weekend_forecast-table .weekend_forecast-table-part:nth-child(4) img {
+  width: 40em;
+  height: 100%;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekend_forecast-table .weekend_forecast-table-part h2 {
+  font-size: 36em;
   font-weight: 400;
-  font-size: 2rem;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekend_forecast-table .weekend_forecast-table-part h1 {
+  font-size: 36em;
+  color: #F83F05;
+  font-weight: bold;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekend_forecast-table .weekend_forecast-table-part h1 span {
+  font-size: 1.3em;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekend_forecast-table .weekend_forecast-table-part h4 {
+  font-size: 36em;
+  color: #F83F05;
+  font-weight: normal;
+  margin-left: .2em;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekend_forecast-table .weekend_forecast-table-part p {
+  margin-left: .2em;
+  font-size: 36em;
   color: #191818;
 }
 
-.weekends_forecast-tables .weekends_forecast-table h1 {
-  color: #F83F05;
-  font-size: 2rem;
-  font-weight: 400;
+@media only screen and (max-width: 560px) {
+  .weekend_forecast-tables .weekend_forecast-table-box .weekend_forecast-table .weekend_forecast-table-part p {
+    display: none;
+  }
 }
 
-.weekends_forecast-tables .weekends_forecast-table h1 span {
-  font-size: 3rem;
+.weekend_forecast-tables .weekend_forecast-table-box .weekend_forecast-table .weekend_forecast-table-part img {
+  width: 100em;
+  height: 100%;
 }
 
-.weekends_forecast-tables .weekends_forecast-table .weekends_forecast-table-weather {
+.weekend_forecast-tables .weekend_forecast-table-box .weekend_forecast-table .weekend_forecast-table-part .show_indicator {
+  width: 40em;
+  height: 100%;
+  cursor: pointer;
+}
+
+.weekend_forecast-tables .weekend_forecast-table-box .weekend_forecast-table .weekend_forecast-table-part.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2338,24 +2649,9 @@ body.weekend {
           align-items: center;
 }
 
-.weekends_forecast-tables .weekends_forecast-table .weekends_forecast-table-weather img {
-  width: 4rem;
-  height: 80%;
-  margin-right: 0.5rem;
-}
-
-.weekends_forecast-tables .weekends_forecast-table p {
-  color: #F83F05;
-  font-size: 2rem;
-}
-
-.weekends_forecast-tables .weekends_forecast-table p i {
-  color: #002AC0;
-  margin-right: .3rem;
-}
-
-.weekends_forecast-tables .weekends_forecast-table .show_more {
-  width: 3rem;
-  height: 100%;
+@media only screen and (max-width: 560px) {
+  .weekend_forecast-tables .weekend_forecast-table-box .weekend_forecast-table .weekend_forecast-table-part.display_none {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,348 +1,361 @@
 .days_forecast {
-    font-size: 1.2px;
-    padding: 0px 1.5rem;
-    color: $blackP;
-    background-color: #fff;
-    border-radius: 2rem;
-    box-shadow: 0px 0px 50px 2px $blueDark;
+   font-size: 1.2px;
+   padding: 0px 1.5rem;
+   color: $blackP;
+   background-color: #fff;
+   border-radius: 2rem;
+   box-shadow: 0px 0px 50px 2px $blueDark;
 
-   @include responsive(bigDesktop) {
-      font-size: 1.2px;
-   }
+  @include responsive(bigDesktop) {
+     font-size: 1.2px;
+  }
 
-   @include responsive(desktop) {
-      font-size: 1px;
-   }
+  @include responsive(desktop) {
+     font-size: 1px;
+  }
 
-   @include responsive(tabHorizon) {
-      font-size: .9px;
-   }
+  @include responsive(tabHorizon) {
+     font-size: .9px;
+  }
 
-   @include responsive(tab) {
-      font-size: .7px;
-   }
+  @include responsive(tab) {
+     font-size: .7px;
+  }
 
-   @include responsive(bigPhone) {
-      font-size: .4px;
-   }
+  @include responsive(bigPhone) {
+     font-size: .4px;
+  }
 
-   @include responsive(middlePhone) {
-      font-size: .5px;
-      box-shadow: none;
-   }
+  @include responsive(middlePhone) {
+     font-size: .5px;
+     box-shadow: none;
+  }
 
-   @include responsive(phone) {
-      font-size: .4px;
-   }
+  @include responsive(phone) {
+     font-size: .4px;
+  }
 
-   @include responsive(smallPhone) {
-      font-size: .3px;
-   }
+  @include responsive(smallPhone) {
+     font-size: .3px;
+  }
 
-    .days_forecast-header {
-       padding-bottom: 30em;
-
-        h2 {
-            font-size: $fz;
-            color: #000;
-            font-weight: normal;
-         
-            span {
-               font-weight: normal;
-                color: $orangeBright;
-                font-size: 1.3em;
-            }
-        } 
-
-        p {
-            font-size: $fz;
-            color: $blackP;
-        }
-    }
-
-  
-}
-
-.days_forecast-detail.margin_top {
-   margin-top: 50px;
-}
-
-.day_forecast-tables {
-   .day_forecast-table-box {
-      .days_forecast-detail-header-box {
-         display: flex;
-         justify-content: space-between;
-         position: relative;
-  
-         @include responsive(middlePhone) {
-           flex-direction: column;
-         }
-  
-         .hide_indicator {
-           position: absolute;
-           top: 0px;
-           right: 0;
-           width: 40em;
-           height: 18em;
-           cursor: pointer;
-        }
-  
-        .days_forecast-detail-header-index {
-           &:nth-child(2) {
-              @include responsive(middlePhone) {
-                  margin-top: 120em;
-              }
+   .days_forecast-header {
+      padding-bottom: 30em;
+       h2 {
+           font-size: $fz;
+           color: #000;
+           font-weight: normal;
+        
+           span {
+              font-weight: normal;
+               color: $orangeBright;
+               font-size: 1.3em;
            }
-         
-               // Days Forecast Detail
-            .days_forecast-detail-header {
-               display: flex;
-               align-items: flex-end;
-               position: relative;
-         
-               @include responsive(middlePhone) {
-                  justify-content: space-between;
-               }
-         
-               h2 {
-               position: absolute;
-               top: -50%;
-               font-size: $fz;
-               color: #333;
-               }
-               
-               &-part {
-                  .temprature_info {
-                     display: flex;
-                     align-items: center;
-                     h1 {
-                           margin-right: .2em;
-                           font-size: 100em;
-                           line-height: 0;
-                           color: $orangeBright;
-                     }
-         
-                     img {
-                           width: 100em;
-                           height: 100%;
-                           margin-right: 30em;
-                     }
-                  }
-         
-                  &-small {
-                     display: flex;
-                     align-items: center;
-         
-                     p {
-                        // transform: translateY(-30px);
-                        font-size: $fz;
-                        color: $orangeBright;  
-                        margin-left: .2em;
-                        line-height: 0;
-                     }
-         
-                     img {
-                        width: 36em;
-                        height: 100%;
-                     }
-                  }
-               }
-            }
-         
-            .days_forecast-detail-description {
-               max-width: 70%;
-               // transform: translateY(-40px);
-         
-               @include responsive(smallPhone) {
-                  // transform: translateY(-30px);
-               }
-         
-               p {
-                   font-size: $fz;
-                   color: $blackP;
-               }
-             }
-         
-             .days_forecast-detail-indicator {
-               position: relative;
-               display: flex;
-               justify-content: space-between;
-               border: 1px solid #ccc;
-               margin: 0px 20px;
-               padding: 0px 10px;
-               border-radius: 25em;
-               // transform: translateY(-50px);
-         
-               @include responsive(bigPhone) {
-                  flex-direction: column;
-               }
-            
-               @include responsive(middlePhone) {
-                  box-shadow: none;
-                  flex-direction: row;
-               }
-            
-               @include responsive(smallPhone) {
-                  @include responsive(smallPhone) {
-                     // transform: translateY(-30px);
-                  }
-            
-               }
-           
-               &::after {
-                 content: '';
-                 position: absolute;
-                 top: 50%;
-                 height: 1px;
-                 right: 5%;
-                 background-color: #ccc;
-                 width: 90%;
-               }
-           
-               &-part {
-                   display: flex;
-                   justify-content: space-between;
-         
-                   @include responsive(bigPhone) {
-                     align-items: center;
-                     justify-content: center;
-                   }
-         
-                   .each_part-icons {
-                       display: flex;
-                       flex-direction: column;
-                       justify-content: space-around;
-                       height: 75%;
-                       transform: translateY(45px);
-                       margin-right: 25em;
-         
-                       @include responsive(bigPhone) {
-                           transform: translateY(0px);
-                        }
-         
-                       .each_part-icon {
-                           width: 48em;
-         
-                           @include responsive(bigPhone) {
-                              width: 75em;
-                           }
-         
-                           @include responsive(middlePhone) {
-                              width: 48em;
-                           }
-                       }
-         
-                       .each_part-icon:first-child {
-                           margin-bottom: 20px;
-                       }
-         
-                       .each_part-icon:last-child {
-                          margin-top: 20px;
-                       }
-         
-                       
-                   }
-           
-                   .each_part-info {
-                     .each_part-info-text {
-                       p {
-                           color: $blackP;
-                           font-size: $fz;
-                       }
-           
-                       h1 {
-                          font-size: $bigfz;
-                          color: $orangeBright;
-                       }
-           
-                       h3 {
-                           font-weight: 400;
-                           font-size: $fz;
-                           color: $orangeBright;
-                       }
-                     }
-                   }
-               }
-           }
-         }
-         
-      }
-   
-      .day_forecast-table {
-         width: 100%;
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         border-bottom: 1px solid #ccc;
-         padding: 10px 0;
+       } 
 
-         &.table_none {
-            display: none;
-         }
+       p {
+           font-size: $fz;
+           color: $blackP;
+       }
+   }
+
  
-         .day_forecast-table-part {
-             &:nth-child(5),
-             &:nth-child(4) {
-                img {
-                   width: 40em;
-                   height: 100%;
+}
+  
+.day_forecast-tables {
+  &.tables_translate {
+     transform: translateY(-60px);
+     @include responsive(bigPhone) {
+        transform: translateY(-30px);
+     }
+  }
+
+  .day_forecast-table-box {
+     &:first-child .days_forecast-detail {
+        margin-top: 0;
+     }
+
+     .days_forecast-detail {
+        margin-top: 70em;
+
+        &.indicator_none {
+           display: none;
+        }
+
+        .days_forecast-detail-header-box {
+           display: flex;
+           justify-content: space-between;
+           position: relative;
+    
+           @include responsive(middlePhone) {
+             flex-direction: column;
+           }
+    
+           .hide_indicator {
+             position: absolute;
+             top: 0px;
+             right: 0;
+             width: 40em;
+             height: 18em;
+             cursor: pointer;
+          }
+    
+          .days_forecast-detail-header-index {
+             &:nth-child(2) {
+                @include responsive(middlePhone) {
+                    margin-top: 120em;
                 }
              }
- 
-             h2 {
+           
+                 // Days Forecast Detail
+              .days_forecast-detail-header {
+                 display: flex;
+                 align-items: flex-end;
+                 position: relative;
+           
+                 @include responsive(middlePhone) {
+                    justify-content: space-between;
+                 }
+           
+                 h2 {
+                 position: absolute;
+                 top: -50%;
                  font-size: $fz;
-                 font-weight: 400;
-             }
- 
-             h1 {
-                 font-size: $fz;
-                 color: $orangeBright;
-                 font-weight: bold;
-                 span {
-                     font-size: 1.3em;
+                 color: #333;
+                 }
+                 
+                 &-part {
+                    .temprature_info {
+                       display: flex;
+                       align-items: center;
+                       h1 {
+                             margin-right: .2em;
+                             font-size: 100em;
+                             line-height: 0;
+                             color: $orangeBright;
+                       }
+           
+                       img {
+                             width: 100em;
+                             height: 100%;
+                             margin-right: 30em;
+                       }
+                    }
+           
+                    &-small {
+                       display: flex;
+                       align-items: center;
+           
+                       p {
+                          // transform: translateY(-30px);
+                          font-size: $fz;
+                          color: $orangeBright;  
+                          margin-left: .2em;
+                          line-height: 0;
+                       }
+           
+                       img {
+                          width: 36em;
+                          height: 100%;
+                       }
+                    }
+                 }
+              }
+           
+              .days_forecast-detail-description {
+                 max-width: 70%;
+                 // transform: translateY(-40px);
+           
+                 @include responsive(smallPhone) {
+                    // transform: translateY(-30px);
+                 }
+           
+                 p {
+                     font-size: $fz;
+                     color: $blackP;
+                 }
+               }
+           
+               .days_forecast-detail-indicator {
+                 position: relative;
+                 display: flex;
+                 justify-content: space-between;
+                 border: 1px solid #ccc;
+                 margin: 0px 20px;
+                 padding: 0px 10px;
+                 border-radius: 25em;
+                 // transform: translateY(-50px);
+           
+                 @include responsive(bigPhone) {
+                    flex-direction: column;
+                 }
+              
+                 @include responsive(middlePhone) {
+                    box-shadow: none;
+                    flex-direction: row;
+                 }
+              
+                 @include responsive(smallPhone) {
+                    @include responsive(smallPhone) {
+                       // transform: translateY(-30px);
+                    }
+              
+                 }
+             
+                 &::after {
+                   content: '';
+                   position: absolute;
+                   top: 50%;
+                   height: 1px;
+                   right: 5%;
+                   background-color: #ccc;
+                   width: 90%;
+                 }
+             
+                 &-part {
+                     display: flex;
+                     justify-content: space-between;
+           
+                     @include responsive(bigPhone) {
+                       align-items: center;
+                       justify-content: center;
+                     }
+           
+                     .each_part-icons {
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: space-around;
+                         height: 75%;
+                         transform: translateY(45px);
+                         margin-right: 25em;
+           
+                         @include responsive(bigPhone) {
+                             transform: translateY(0px);
+                          }
+           
+                         .each_part-icon {
+                             width: 48em;
+           
+                             @include responsive(bigPhone) {
+                                width: 75em;
+                             }
+           
+                             @include responsive(middlePhone) {
+                                width: 48em;
+                             }
+                         }
+           
+                         .each_part-icon:first-child {
+                             margin-bottom: 20px;
+                         }
+           
+                         .each_part-icon:last-child {
+                            margin-top: 20px;
+                         }
+           
+                         
+                     }
+             
+                     .each_part-info {
+                       .each_part-info-text {
+                         p {
+                             color: $blackP;
+                             font-size: $fz;
+                         }
+             
+                         h1 {
+                            font-size: $bigfz;
+                            color: $orangeBright;
+                         }
+             
+                         h3 {
+                             font-weight: 400;
+                             font-size: $fz;
+                             color: $orangeBright;
+                         }
+                       }
+                     }
                  }
              }
- 
-             h4 {
+           }   
+        }
+     }
+  
+     .day_forecast-table {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+
+        &.table_none {
+           display: none;
+        }
+
+        .day_forecast-table-part {
+            &:nth-child(5),
+            &:nth-child(4) {
+               img {
+                  width: 40em;
+                  height: 100%;
+               }
+            }
+
+            h2 {
+                font-size: $fz;
+                font-weight: 400;
+            }
+
+            h1 {
                 font-size: $fz;
                 color: $orangeBright;
-                font-weight: normal;
-                margin-left: .2em;
-             }
- 
-             p {
-                 margin-left: .2em;
-                 font-size: $fz;
-                 color: $blackP;
- 
-                 @include responsive(middlePhone) {
-                   display: none;
-                 }
-             }
- 
-             img {
-                 width: 100em;
-                 height: 100%;
-             }
- 
- 
-             .show_indicator {
-                 width: 40em;
-                 height: 100%;
-                 cursor: pointer;
-             }
- 
-             &.flex {
-                 display: flex;
-                 align-items: center;
-             }
- 
-             &.display_none {
-                @include responsive(middlePhone) {
-                   display: none;
+                font-weight: bold;
+                span {
+                    font-size: 1.3em;
                 }
-             }
-         }
-     }
-   }
+            }
+
+            h4 {
+               font-size: $fz;
+               color: $orangeBright;
+               font-weight: normal;
+               margin-left: .2em;
+            }
+
+            p {
+                margin-left: .2em;
+                font-size: $fz;
+                color: $blackP;
+
+                @include responsive(middlePhone) {
+                  display: none;
+                }
+            }
+
+            img {
+                width: 100em;
+                height: 100%;
+            }
+
+
+            .show_indicator {
+                width: 40em;
+                height: 100%;
+                cursor: pointer;
+            }
+
+            &.flex {
+                display: flex;
+                align-items: center;
+            }
+
+            &.display_none {
+               @include responsive(middlePhone) {
+                  display: none;
+               }
+            }
+        }
+    }
+  }
 }

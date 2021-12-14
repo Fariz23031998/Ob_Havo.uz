@@ -31,7 +31,7 @@ function hideIndicator(event) {
    const button = event.target;
    const indicator = button.parentElement.parentElement;
    const mainBox = button.parentElement.parentElement.parentElement;
-   const table = mainBox.querySelector('.day_forecast-table');
+   const table = mainBox.querySelector('.weekend_forecast-table');
    indicator.classList.add('indicator_none');
    table.classList.remove('table_none');
 }
@@ -40,7 +40,7 @@ function showIndicator(event) {
    const button = event.target;
    const mainBox = button.parentElement.parentElement.parentElement;
    const table = button.parentElement.parentElement;
-   const indicator = mainBox.querySelector('.days_forecast-detail');
+   const indicator = mainBox.querySelector('.weekends_forecast-detail');
   
    removeAllIndicators();
 
@@ -49,26 +49,23 @@ function showIndicator(event) {
 }
 
 function addTranslateForTables() {
-   const tablesContainer = document.querySelector('.day_forecast-tables');
+   const tablesContainer = document.querySelector('.weekend_forecast-tables');
    tablesContainer.classList.add('tables_translate');
 }
 
 function removeTranslateForTables() {
-   const tablesContainer = document.querySelector('.day_forecast-tables');
+   const tablesContainer = document.querySelector('.weekend_forecast-tables');
    tablesContainer.classList.remove('tables_translate');
 }
 
 function removeAllIndicators() {
-   const indicators = document.querySelectorAll('.days_forecast-detail');
+   const indicators = document.querySelectorAll('.weekends_forecast-detail');
    indicators.forEach(item => {
       item.classList.add('indicator_none');    
    });
 
-   const tables = document.querySelectorAll('.day_forecast-table');
+   const tables = document.querySelectorAll('.weekend_forecast-table');
    tables.forEach(item => {
       item.classList.remove('table_none');
    });
 }
-
-
-

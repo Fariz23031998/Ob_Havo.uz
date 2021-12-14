@@ -1,72 +1,101 @@
+.footer_container {
+   max-width: 1600px;
+}
+
 .footer {
     background-color: #36469A;
     font-size: 1px;
-    
-    &.days {
-       margin-top: 40em;
-       @include responsive(bigPhone) {
-          margin-top: 13em;
-       }
-
-       @include responsive(middlePhone) {
-         margin-top: 0em;
-      }
-    }
-
-    @include responsive (tabHorizon) {
-        font-size: .7px;
-    }
-
-    @include responsive (tab) {
-        font-size: .5px;
-    }
-
-    @include responsive (bigPhone) {
-        font-size: 1px;
-    }
-
-    @include responsive (middlePhone) {
-        font-size: .6px;
-    }
-
-
-    @include responsive (smallPhone) {
-        padding: 3px 12px;
-        font-size: .3px;
-    }
-}
-
-.footer_container {
-    padding: 0px 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    padding: 40em 120em;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
+    position: relative;
 
-    @include responsive (bigPhone) {
-        grid-template-columns: 1fr;
-        padding-bottom: 20px;
-    }
+    @include responsive(bigDesktop) {
+      font-size: 1.2px;
+   }
+ 
+   @include responsive(desktop) {
+      font-size: 1px;
+   }
+ 
+   @include responsive(tabHorizon) {
+      font-size: .7px;
+   }
+ 
+   @include responsive(tab) {
+      font-size: .6px;
+   }
+ 
+   @include responsive(bigPhone) {
+      font-size: .5px;
+      padding-top: 150em;
+      padding-bottom: 100em;
+   }
+ 
+   @include responsive(middlePhone) {
+      font-size: .35px;
+   }
+ 
+   @include responsive(phone) {
+      font-size: .4px;
+      flex-direction: column;
+      padding: 150em 100em;
+   }
+ 
+   @include responsive(smallPhone) {
+      font-size: .3px;
+   }
 
     p {
-        font-size: $fz;
-        color: #fff;
-    }
+      font-size: $fz;
+      color: #fff;
 
-    h2 {
-        font-size: $fz;
-    }
+      span {
+         color: $orangeBright;
+      }
+  }
 
-    .footer_author {
-        line-height: 2;
-    }
+  h2 {
+      font-size: $fz;
+      text-transform: uppercase;
+  }
 
-    .footer_social {
-        .footer_social-logo {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            img {
-                width: 60em;
-            }
-        }
-    }
+  .footer_menu {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+
+     @include responsive(bigPhone) {
+         position: absolute;
+         flex-direction: row;
+         align-items: center;
+         top: 0;
+         justify-content: space-between;
+         width: 80%;
+         left: 20px;
+     }
+
+      a {
+         font-size: $fz;
+         text-decoration: none;
+         color: $blueDark;
+         transition: color .4s ease;
+         &:hover {
+            color: $orangeBright;
+         }
+      }
+  }
+
+  .footer_social {
+      .footer_social-logo {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          img {
+              width: 60em;
+          }
+      }
+  }
+
 }
+

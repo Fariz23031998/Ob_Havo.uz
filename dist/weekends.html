@@ -1,245 +1,1080 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/fc64a5b3aa.js" crossorigin="anonymous"></script>
-    <title>Ob-havo.UZ</title>
-</head>
-
-<body class="weekend">
-    <!-- Header -->
-<header class="header">
-    <div class="header_container">
-        <div class="header_first-row">
-            <div class="header_logo">
-                <img class="header_logo-img" src="./img/header_logo.png" alt="">
-            </div>
-            <form class="header_search">
-                <input type="text" placeholder="search your city">
-                  <a class="search" href="">
-                     <img src="img/signs/search.png" alt="">
-                  </a>
-                </input>
-            </form>
-            <div class="header_temp-detector">
-                <p>Samarkand</p>
-                <h1>13°</h1>
-                <img src="./img/rainy-day.png" alt="">
-            </div>
-        </div>
-    </div>
-</header>
-<!-- Nav -->
-<nav class="nav">
-   <a href="index.html" class="nav_links">Today</a>
-   <a href="hours.html" class="nav_links">Hourly</a>
-   <a href="10day.html" class="nav_links">10 Day</a>
-   <a href="weekends.html" class="nav_links active">Weekend</a>
-</nav>
-
-<!-- Weekends Forecast -->
-<div class="main_container">
-    <div class="weekends_forecast">
-        <div class="weekends_forecast-header">
-            <h2>Weekend Weather for <span>Samarkand, UZ</span></h2>
-            <p>As of 11:27 pm SSK</p>
-        </div>
-        <div class="weekends_forecast-detail">
-            <h2>This Weekend</h2>
-            <div class="main_indicators">
-                <div class="main_indicators-part">
-                    <h2>Fri 22 | Day</h2>
-                    <div class="main_indicators-part-temp">
-                        <h1>2°</h1>
-                        <img src="./img/rain.png" alt="">
-                        <div class="humidity_wind">
-                                <p><i class="fas fa-tint"></i>94%</p>
-                                <p><i class="fas fa-wind"></i> SW 27 km/h</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="main_indicators-part">
-                    <h2>Fri 22 | Night</h2>
-                    <div class="main_indicators-part-temp">
-                        <h1>5°</h1>
-                        <img src="./img/rain.png" alt="">
-                        <div class="humidity_wind">
-                                <p><i class="fas fa-tint"></i> 90%</p>
-                                <p><i class="fas fa-wind"></i> SW 65 km/h</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="main_indicators-part">
-                    <a href="">
-                        <img src="./img/signs/show-less.png" alt="">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/main.css">
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/fc64a5b3aa.js" crossorigin="anonymous"></script>
+      <title>Ob-havo.UZ</title>
+  </head>
+  <body id="body" class="bg_white">
+  <!-- Header -->
+  <header class="header" id="header">
+      <div class="header_container">
+          <div class="header_first-row">
+              <div class="open_menu" id="openMenu">
+                 <img src="./img/signs/menu.png" alt="">
+              </div>
+              <div class="close_menu" id="closeMenu">
+                 <img src="./img/signs/cancel.png" alt="">
+              </div>
+              <div class="header_logo" id="headerLogo">
+                  <img class="header_logo-img" src="./img/header_logo.png" alt="">
+              </div>
+              <form class="header_search">
+                  <input id="searchBar" type="text" placeholder="Enter City">
+                    <a class="search" href="#" id="searchButton">
+                       <i class="fas fa-search"></i>
                     </a>
-                </div>
-            </div>
-
-            <div class="descriptions">
-                <div class="descriptions_part">
-                    <p>Windy. Partly cloudy skies giving way to showers in the afternoon. High 12C. Winds WSW at 30 to 50 km/h. Chance of rain 50%. Winds could occasionally gust over 65 km/h.</p>
-                </div>
-
-                <div class="descriptions_part">
-                    <p>Partly cloudy skies during the evening will give way to cloudy skies overnight. Low near 5C. Winds SW at 15 to 30 km/h.</p>
-                </div>
-            </div>
-
-            <div class="indicators_addition">
-                <div class="indicators_addition-part">
-                    <div class="indicators_addition-part-index">
-                        <img src="./img/signs/humadity.png" alt="">
-                        <div class="indicators_addition-part-index-text">
-                            <h2>Humidity</h2>
-                            <p>75%</p>
-                        </div>
-                    </div>
-                    <div class="indicators_addition-part-index">
-                        <img src="./img/signs/uv-index.png" alt="">
-                        <div class="indicators_addition-part-index-text">
-                            <h2>UV Index</h2>
-                            <p>0 of 10</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="indicators_addition-part">
-                    <div class="indicators_addition-part-index">
-                        <img src="./img/signs/dew-point.png" alt="">
-                        <div class="indicators_addition-part-index-text">
-                            <h2>Dew Point</h2>
-                            <h1>-2°</h1>
-                        </div>
-                    </div>
-                    <div class="indicators_addition-part-index">
-                        <img src="./img/signs/moon-phase.png" alt="">
-                        <div class="indicators_addition-part-index-text">
-                            <h2>Moon Phase</h2>
-                            <p>Full Moon</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+                  </input>
+              </form>
+              
+              <div class="header_temp-detector bg_main-page" id="header_temp-detector">
+                  <p>Samarkand</p>
+                  <h1>13°</h1>
+                  <img src="./img/rainy-day.png" alt="">
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- Nav -->
+  <nav class="nav nav_weekends" id="nav"> <!-- class="nav_menu" -->
+     <div class="header_container">
+        <div class="nav_inside">
+           <a href="index.html" class="nav_links">Today</a>
+           <a href="hours.html" class="nav_links">Hourly</a>
+           <a href="10day.html" class="nav_links">10 Day</a>
+           <a href="weekends.html" class="nav_links active">Weekend</a>
+     
+           <div class="nav_info" id="navInfo">
+              <div class="nav_info_author">
+                  <p>This Website Created By Fariz Khuramov</p>
+              </div>
+              <div class="nav_info-contacts">
+                  <h2>CONTACTS</h2>
+                  <p>Phone: +7926 777-12-70</p>
+                  <p>Email: fariz1998pro@gmail.com</p>
+              </div>
+              <div class="nav_info-social">
+                  <h2>SOCIAL NETWORKS</h2>
+                  <div class="nav_info-social-logo">
+                      <a href="">
+                          <img src="./img/facebook.png" alt="">
+                      </a>
+                      <a href="">
+                          <img src="./img/instagram.png" alt="">
+                      </a>
+                      <a href="">
+                          <img src="./img/twitter.png" alt="">
+                      </a>
+                  </div>
+              </div>
+          </div>
+     
         </div>
+     </div> <!-- /container -->  
+  </nav>
 
-        <div class="weekends_forecast-tables">
-            <div class="weekends_forecast-table">
-                <h2>Sat 23</h2>
-                <h1> <span>13°</span>/10°</h1>
+<!-- 10day Forecast -->
+<div class="main_container">
+   <div class="weekends_forecast">
+       <div class="weekends_forecast-header">
+           <h2>Weekend Weather for <span>Samarkand, UZ</span></h2>
+           <p>As of 11:27 pm SSK</p>
+           <h3>This Weekend</h3>
+       </div>    
+       <div class="weekend_forecast-tables">
+           <!-- 1 -->
+           <div class="weekend_forecast-table-box">
+              <div class="weekends_forecast-detail">
+                 <div class="weekends_forecast-detail-header-box">
+                    <div class="weekends_forecast-detail-header-index">
+                       <div class="weekends_forecast-detail-header">
+                          <h2><span class="weekend_and_week">Fri 22</span> | Day</h2>
+                          <div class="weekends_forecast-detail-header-part">
+                             <div class="temprature_info">
+                                   <h1>2°</h1>
+                                   <img src="./img/rain.png" alt="">
+                             </div>
+                          </div>
+                          <div class="weekends_forecast-detail-header-part">
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/water.png" alt="">
+                                   <p>94%</p>
+                                </div>
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/wind_blue.png" alt="">
+                                   <p>SW 27 km/h</p>
+                                </div>  
+                          </div>
+                       </div>
+                       <div class="weekends_forecast-detail-description">
+                          <p>Rain. Low 2C. Winds SW at 15 to 30 km/h. Chance of rain 90%</p>
+                       </div> 
+                       <div class="weekends_forecast-detail-indicator">
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/water.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/uv_index.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Humidity</p>
+                                      <h3>74%</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>UV Index</p>
+                                      <h1>0 of 10</h1>
+                                  </div>
+                              </div>
+                          </div>
+          
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/sunrise.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/sunset.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Sunrise</p>
+                                      <h3>8:30 am</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>Sunset</p>
+                                      <h3>06:35 pm</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div> 
+                    </div>
+     
+                    <div class="weekends_forecast-detail-header-index">
+                       <div class="weekends_forecast-detail-header">
+                          <h2>Fri 22 | Night</h2>
+                          <div class="weekends_forecast-detail-header-part">
+                             <div class="temprature_info">
+                                   <h1>2°</h1>
+                                   <img src="./img/rain.png" alt="">
+                             </div>
+                          </div>
+                          <div class="weekends_forecast-detail-header-part">
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/water.png" alt="">
+                                   <p>94%</p>
+                                </div>
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/wind_blue.png" alt="">
+                                   <p>SW 27 km/h</p>
+                                </div>  
+                          </div>
+                       </div>  
+                       <div class="weekends_forecast-detail-description">
+                          <p>Rain. Low 2C. Winds SW at 15 to 30 km/h. Chance of rain 90%</p>
+                       </div>
+     
+                       <div class="weekends_forecast-detail-indicator">
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/water.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/uv_index.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Humidity</p>
+                                      <h3>74%</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>UV Index</p>
+                                      <h3>0 of 10</h3>
+                                  </div>
+                              </div>
+                          </div>
+          
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/moonrise.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/moonset.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Moonrise</p>
+                                      <h3>07:45 pm</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>Moonset</p>
+                                      <h3>01:35 pm</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <img class="hide_indicator" id="show_days" src="./img/signs/show_less-blue.png" alt="">
+                 </div>
+             </div>
 
-                <div class="weekends_forecast-table-weather">
+             <!-- Table part -->
+              <div class="weekend_forecast-table table_none">
+                 <div class="weekend_forecast-table-part">
+                    <h2 class="weekend_and_week">Fri 22</h2>
+                 </div>
+                 <div class="weekend_forecast-table-part">
+                    <h1><span>10°</span>/12°</h1>
+                 </div>
+                 <div class="weekend_forecast-table-part flex">
                     <img src="./img/rain.png" alt="">
-                    <h2>Am Light Rain</h2>
-                </div>
-                <p><i class="fas fa-tint"></i>82%</p>
-                <p><i class="fas fa-wind"></i>SW 30 km/h</p>
-                <a href="">
-                    <img class="show_more" src="./img/signs/show-more.png" alt="">
-                </a>
-            </div>
+                    <p>Am Light Rain</p>
+                 </div>
+                 <div class="weekend_forecast-table-part flex">
+                    <img src="./img/signs/drop.png" alt="">
+                    <h4>88%</h4>
+                 </div>
+                 <div class="weekend_forecast-table-part flex display_none">
+                    <img src="./img/signs/wind_blue.png" alt="">
+                    <h4>SW 24 km/h</h4>
+                 </div>
+                 <div class="weekend_forecast-table-part">
+                    <img class="show_indicator" src="./img/signs/show_more-blue.png" alt="">
+                 </div>
+              </div>
+           </div>
 
-            <div class="weekends_forecast-table">
-                <h2>Sat 24</h2>
-                <h1> <span>16°</span>/10°</h1>
+           <div class="weekend_forecast-table-box">
+              <!-- 2 -->
+              <div class="weekends_forecast-detail indicator_none">
+                 <div class="weekends_forecast-detail-header-box">
+                    <div class="weekends_forecast-detail-header-index">
+                       <div class="weekends_forecast-detail-header">
+                          <h2><span class="weekend_and_week">Sat 23</span> | Day</h2>
+                          <div class="weekends_forecast-detail-header-part">
+                             <div class="temprature_info">
+                                   <h1>2°</h1>
+                                   <img src="./img/rain.png" alt="">
+                             </div>
+                          </div>
+                          <div class="weekends_forecast-detail-header-part">
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/water.png" alt="">
+                                   <p>94%</p>
+                                </div>
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/wind_blue.png" alt="">
+                                   <p>SW 27 km/h</p>
+                                </div>  
+                          </div>
+                       </div>
+                       <div class="weekends_forecast-detail-description">
+                          <p>Rain. Low 2C. Winds SW at 15 to 30 km/h. Chance of rain 90%</p>
+                       </div> 
+                       <div class="weekends_forecast-detail-indicator">
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/water.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/uv_index.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Humidity</p>
+                                      <h3>74%</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>UV Index</p>
+                                      <h1>0 of 10</h1>
+                                  </div>
+                              </div>
+                          </div>
+          
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/sunrise.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/sunset.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Sunrise</p>
+                                      <h3>8:30 am</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>Sunset</p>
+                                      <h3>06:35 pm</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div> 
+                    </div>
+     
+                    <div class="weekends_forecast-detail-header-index">
+                       <div class="weekends_forecast-detail-header">
+                          <h2><span class="weekend_and_week">Sat 23</span> | Night</h2>
+                          <div class="weekends_forecast-detail-header-part">
+                             <div class="temprature_info">
+                                   <h1>2°</h1>
+                                   <img src="./img/rain.png" alt="">
+                             </div>
+                          </div>
+                          <div class="weekends_forecast-detail-header-part">
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/water.png" alt="">
+                                   <p>94%</p>
+                                </div>
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/wind_blue.png" alt="">
+                                   <p>SW 27 km/h</p>
+                                </div>  
+                          </div>
+                       </div>  
+                       <div class="weekends_forecast-detail-description">
+                          <p>Rain. Low 2C. Winds SW at 15 to 30 km/h. Chance of rain 90%</p>
+                       </div>
+     
+                       <div class="weekends_forecast-detail-indicator">
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/water.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/uv_index.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Humidity</p>
+                                      <h3>74%</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>UV Index</p>
+                                      <h3>0 of 10</h3>
+                                  </div>
+                              </div>
+                          </div>
+          
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/moonrise.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/moonset.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Moonrise</p>
+                                      <h3>07:45 pm</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>Moonset</p>
+                                      <h3>01:35 pm</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <img class="hide_indicator" id="show_days" src="./img/signs/show_less-blue.png" alt="">
+                 </div>
+             </div>
 
-                <div class="weekends_forecast-table-weather">
+             <!-- Table part -->
+              <div class="weekend_forecast-table">
+                 <div class="weekend_forecast-table-part">
+                    <h2 class="weekend_and_week">Sat 23</h2>
+                 </div>
+                 <div class="weekend_forecast-table-part">
+                    <h1><span>13°</span>/10°</h1>
+                 </div>
+                 <div class="weekend_forecast-table-part flex">
                     <img src="./img/rain.png" alt="">
-                    <h2>Am Light Rain</h2>
-                </div>
-                <p><i class="fas fa-tint"></i>82%</p>
-                <p><i class="fas fa-wind"></i>SW 30 km/h</p>
-                <a href="">
-                    <img class="show_more" src="./img/signs/show-more.png" alt="">
-                </a>
-            </div>
+                    <p>Am Light Rain</p>
+                 </div>
+                 <div class="weekend_forecast-table-part flex">
+                    <img src="./img/signs/drop.png" alt="">
+                    <h4>82%</h4>
+                 </div>
+                 <div class="weekend_forecast-table-part flex display_none">
+                    <img src="./img/signs/wind_blue.png" alt="">
+                    <h4>SW 30 km/h</h4>
+                 </div>
+                 <div class="weekend_forecast-table-part">
+                    <img class="show_indicator" src="./img/signs/show_more-blue.png" alt="">
+                 </div>
+              </div>
+           </div>
 
-            <h2 class="weekends_forecast-tables-header">Next Weekend</h2>
+           <div class="weekend_forecast-table-box">
+              <!-- 3 -->
+              <div class="weekends_forecast-detail indicator_none">
+                 <div class="weekends_forecast-detail-header-box">
+                    <div class="weekends_forecast-detail-header-index">
+                       <div class="weekends_forecast-detail-header">
+                          <h2><span class="weekend_and_week">Sun 24</span> | Day</h2>
+                          <div class="weekends_forecast-detail-header-part">
+                             <div class="temprature_info">
+                                   <h1>2°</h1>
+                                   <img src="./img/rain.png" alt="">
+                             </div>
+                          </div>
+                          <div class="weekends_forecast-detail-header-part">
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/water.png" alt="">
+                                   <p>94%</p>
+                                </div>
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/wind_blue.png" alt="">
+                                   <p>SW 27 km/h</p>
+                                </div>  
+                          </div>
+                       </div>
+                       <div class="weekends_forecast-detail-description">
+                          <p>Rain. Low 2C. Winds SW at 15 to 30 km/h. Chance of rain 90%</p>
+                       </div> 
+                       <div class="weekends_forecast-detail-indicator">
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/water.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/uv_index.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Humidity</p>
+                                      <h3>74%</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>UV Index</p>
+                                      <h1>0 of 10</h1>
+                                  </div>
+                              </div>
+                          </div>
+          
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/sunrise.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/sunset.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Sunrise</p>
+                                      <h3>8:30 am</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>Sunset</p>
+                                      <h3>06:35 pm</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div> 
+                    </div>
+     
+                    <div class="weekends_forecast-detail-header-index">
+                       <div class="weekends_forecast-detail-header">
+                          <h2><span class="weekend_and_week">Sun 24</span> | Night</h2>
+                          <div class="weekends_forecast-detail-header-part">
+                             <div class="temprature_info">
+                                   <h1>2°</h1>
+                                   <img src="./img/rain.png" alt="">
+                             </div>
+                          </div>
+                          <div class="weekends_forecast-detail-header-part">
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/water.png" alt="">
+                                   <p>94%</p>
+                                </div>
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/wind_blue.png" alt="">
+                                   <p>SW 27 km/h</p>
+                                </div>  
+                          </div>
+                       </div>  
+                       <div class="weekends_forecast-detail-description">
+                          <p>Rain. Low 2C. Winds SW at 15 to 30 km/h. Chance of rain 90%</p>
+                       </div>
+     
+                       <div class="weekends_forecast-detail-indicator">
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/water.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/uv_index.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Humidity</p>
+                                      <h3>74%</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>UV Index</p>
+                                      <h3>0 of 10</h3>
+                                  </div>
+                              </div>
+                          </div>
+          
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/moonrise.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/moonset.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Moonrise</p>
+                                      <h3>07:45 pm</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>Moonset</p>
+                                      <h3>01:35 pm</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <img class="hide_indicator" id="show_days" src="./img/signs/show_less-blue.png" alt="">
+                 </div>
+             </div>
 
-            <div class="weekends_forecast-table">
-                <h2>Fri 29</h2>
-                <h1> <span>16°</span>/10°</h1>
+               <!-- Table parte -->
+              <div class="weekend_forecast-table">
+                 <div class="weekend_forecast-table-part">
+                    <h2 class="weekend_and_week">Sun 24</h2>
+                 </div>
+                 <div class="weekend_forecast-table-part">
+                    <h1><span>14°</span>/12°</h1>
+                 </div>
+                 <div class="weekend_forecast-table-part flex">
+                    <img src="./img/sunny.png" alt="">
+                    <p>Mostly Sunny</p>
+                 </div>
+                 <div class="weekend_forecast-table-part flex">
+                    <img src="./img/signs/drop.png" alt="">
+                    <h4>25%</h4>
+                 </div>
+                 <div class="weekend_forecast-table-part flex display_none">
+                    <img src="./img/signs/wind_blue.png" alt="">
+                    <h4>SW 30 km/h</h4>
+                 </div>
+                 <div class="weekend_forecast-table-part">
+                    <img class="show_indicator" src="./img/signs/show_more-blue.png" alt="">
+                 </div>
+              </div>
+           </div>
 
-                <div class="weekends_forecast-table-weather">
+           <div class="weekends_forecast-header">
+               <h3>This Weekend</h3>
+           </div>  
+
+           <div class="weekend_forecast-table-box">
+              <!-- 4 -->
+              <div class="weekends_forecast-detail indicator_none">
+                 <div class="weekends_forecast-detail-header-box">
+                    <div class="weekends_forecast-detail-header-index">
+                       <div class="weekends_forecast-detail-header">
+                          <h2><span class="weekend_and_week">Fri 29</span> | Day</h2>
+                          <div class="weekends_forecast-detail-header-part">
+                             <div class="temprature_info">
+                                   <h1>2°</h1>
+                                   <img src="./img/rain.png" alt="">
+                             </div>
+                          </div>
+                          <div class="weekends_forecast-detail-header-part">
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/water.png" alt="">
+                                   <p>94%</p>
+                                </div>
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/wind_blue.png" alt="">
+                                   <p>SW 27 km/h</p>
+                                </div>  
+                          </div>
+                       </div>
+                       <div class="weekends_forecast-detail-description">
+                          <p>Rain. Low 2C. Winds SW at 15 to 30 km/h. Chance of rain 90%</p>
+                       </div> 
+                       <div class="weekends_forecast-detail-indicator">
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/water.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/uv_index.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Humidity</p>
+                                      <h3>74%</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>UV Index</p>
+                                      <h1>0 of 10</h1>
+                                  </div>
+                              </div>
+                          </div>
+          
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/sunrise.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/sunset.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Sunrise</p>
+                                      <h3>8:30 am</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>Sunset</p>
+                                      <h3>06:35 pm</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div> 
+                    </div>
+     
+                    <div class="weekends_forecast-detail-header-index">
+                       <div class="weekends_forecast-detail-header">
+                          <h2><span class="weekend_and_week">Fri 29</span> | Night</h2>
+                          <div class="weekends_forecast-detail-header-part">
+                             <div class="temprature_info">
+                                   <h1>2°</h1>
+                                   <img src="./img/rain.png" alt="">
+                             </div>
+                          </div>
+                          <div class="weekends_forecast-detail-header-part">
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/water.png" alt="">
+                                   <p>94%</p>
+                                </div>
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/wind_blue.png" alt="">
+                                   <p>SW 27 km/h</p>
+                                </div>  
+                          </div>
+                       </div>  
+                       <div class="weekends_forecast-detail-description">
+                          <p>Rain. Low 2C. Winds SW at 15 to 30 km/h. Chance of rain 90%</p>
+                       </div>
+     
+                       <div class="weekends_forecast-detail-indicator">
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/water.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/uv_index.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Humidity</p>
+                                      <h3>74%</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>UV Index</p>
+                                      <h3>0 of 10</h3>
+                                  </div>
+                              </div>
+                          </div>
+          
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/moonrise.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/moonset.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Moonrise</p>
+                                      <h3>07:45 pm</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>Moonset</p>
+                                      <h3>01:35 pm</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <img class="hide_indicator" id="show_days" src="./img/signs/show_less-blue.png" alt="">
+                 </div>
+             </div>
+
+             <!-- Table part  -->
+              <div class="weekend_forecast-table">
+                 <div class="weekend_forecast-table-part">
+                    <h2 class="weekend_and_week">Fri 29</h2>
+                 </div>
+                 <div class="weekend_forecast-table-part">
+                    <h1><span>10°</span>/7°</h1>
+                 </div>
+                 <div class="weekend_forecast-table-part flex">
                     <img src="./img/rain.png" alt="">
-                    <h2>Am Light Rain</h2>
-                </div>
-                <p><i class="fas fa-tint"></i>82%</p>
-                <p><i class="fas fa-wind"></i>SW 30 km/h</p>
-                <a href="">
-                    <img class="show_more" src="./img/signs/show-more.png" alt="">
-                </a>
-            </div>
+                    <p>Am Light Rain</p>
+                 </div>
+                 <div class="weekend_forecast-table-part flex">
+                    <img src="./img/signs/drop.png" alt="">
+                    <h4>82%</h4>
+                 </div>
+                 <div class="weekend_forecast-table-part flex display_none">
+                    <img src="./img/signs/wind_blue.png" alt="">
+                    <h4>SW 30 km/h</h4>
+                 </div>
+                 <div class="weekend_forecast-table-part">
+                    <img class="show_indicator" src="./img/signs/show_more-blue.png" alt="">
+                 </div>
+              </div>
+           </div>
 
-            <div class="weekends_forecast-table">
-                <h2>Sat 30</h2>
-                <h1> <span>17°</span>/10°</h1>
+           <div class="weekend_forecast-table-box">
+               <!-- 5 -->
+               <div class="weekends_forecast-detail indicator_none">
+                 <div class="weekends_forecast-detail-header-box">
+                    <div class="weekends_forecast-detail-header-index">
+                       <div class="weekends_forecast-detail-header">
+                          <h2><span class="weekend_and_week">Sat 30</span> | Day</h2>
+                          <div class="weekends_forecast-detail-header-part">
+                             <div class="temprature_info">
+                                   <h1>2°</h1>
+                                   <img src="./img/rain.png" alt="">
+                             </div>
+                          </div>
+                          <div class="weekends_forecast-detail-header-part">
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/water.png" alt="">
+                                   <p>94%</p>
+                                </div>
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/wind_blue.png" alt="">
+                                   <p>SW 27 km/h</p>
+                                </div>  
+                          </div>
+                       </div>
+                       <div class="weekends_forecast-detail-description">
+                          <p>Rain. Low 2C. Winds SW at 15 to 30 km/h. Chance of rain 90%</p>
+                       </div> 
+                       <div class="weekends_forecast-detail-indicator">
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/water.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/uv_index.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Humidity</p>
+                                      <h3>74%</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>UV Index</p>
+                                      <h1>0 of 10</h1>
+                                  </div>
+                              </div>
+                          </div>
+          
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/sunrise.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/sunset.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Sunrise</p>
+                                      <h3>8:30 am</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>Sunset</p>
+                                      <h3>06:35 pm</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div> 
+                    </div>
+     
+                    <div class="weekends_forecast-detail-header-index">
+                       <div class="weekends_forecast-detail-header">
+                          <h2><span class="weekend_and_week">Sat 30</span> | Night</h2>
+                          <div class="weekends_forecast-detail-header-part">
+                             <div class="temprature_info">
+                                   <h1>2°</h1>
+                                   <img src="./img/rain.png" alt="">
+                             </div>
+                          </div>
+                          <div class="weekends_forecast-detail-header-part">
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/water.png" alt="">
+                                   <p>94%</p>
+                                </div>
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/wind_blue.png" alt="">
+                                   <p>SW 27 km/h</p>
+                                </div>  
+                          </div>
+                       </div>  
+                       <div class="weekends_forecast-detail-description">
+                          <p>Rain. Low 2C. Winds SW at 15 to 30 km/h. Chance of rain 90%</p>
+                       </div>
+     
+                       <div class="weekends_forecast-detail-indicator">
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/water.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/uv_index.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Humidity</p>
+                                      <h3>74%</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>UV Index</p>
+                                      <h3>0 of 10</h3>
+                                  </div>
+                              </div>
+                          </div>
+          
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/moonrise.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/moonset.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Moonrise</p>
+                                      <h3>07:45 pm</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>Moonset</p>
+                                      <h3>01:35 pm</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <img class="hide_indicator" id="show_days" src="./img/signs/show_less-blue.png" alt="">
+                 </div>
+             </div>
 
-                <div class="weekends_forecast-table-weather">
-                    <img src="./img/rain.png" alt="">
-                    <h2>Am Light Rain</h2>
-                </div>
-                <p><i class="fas fa-tint"></i>82%</p>
-                <p><i class="fas fa-wind"></i>SW 30 km/h</p>
-                <a href="">
-                    <img class="show_more" src="./img/signs/show-more.png" alt="">
-                </a>
-            </div>
+             <!-- Table part -->
+              <div class="weekend_forecast-table">
+                 <div class="weekend_forecast-table-part">
+                    <h2 class="weekend_and_week">Sat 30</h2>
+                 </div>
+                 <div class="weekend_forecast-table-part">
+                    <h1><span>18°</span>/15°</h1>
+                 </div>
+                 <div class="weekend_forecast-table-part flex">
+                    <img src="./img/sunny.png" alt="">
+                    <p>Mostly Sunny</p>
+                 </div>
+                 <div class="weekend_forecast-table-part flex">
+                    <img src="./img/signs/drop.png" alt="">
+                    <h4>10%</h4>
+                 </div>
+                 <div class="weekend_forecast-table-part flex display_none">
+                    <img src="./img/signs/wind_blue.png" alt="">
+                    <h4>SW 30 km/h</h4>
+                 </div>
+                 <div class="weekend_forecast-table-part">
+                    <img class="show_indicator" src="./img/signs/show_more-blue.png" alt="">
+                 </div>
+              </div>
+           </div>
 
-            <div class="weekends_forecast-table">
-                <h2>Sun 31</h2>
-                <h1> <span>18°</span>/12°</h1>
+           <div class="weekend_forecast-table-box">
+               <!-- 6 -->
+               <div class="weekends_forecast-detail indicator_none">
+                 <div class="weekends_forecast-detail-header-box">
+                    <div class="weekends_forecast-detail-header-index">
+                       <div class="weekends_forecast-detail-header">
+                          <h2><span class="weekend_and_week">Sun 31</span> | Day</h2>
+                          <div class="weekends_forecast-detail-header-part">
+                             <div class="temprature_info">
+                                   <h1>2°</h1>
+                                   <img src="./img/rain.png" alt="">
+                             </div>
+                          </div>
+                          <div class="weekends_forecast-detail-header-part">
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/water.png" alt="">
+                                   <p>94%</p>
+                                </div>
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/wind_blue.png" alt="">
+                                   <p>SW 27 km/h</p>
+                                </div>  
+                          </div>
+                       </div>
+                       <div class="weekends_forecast-detail-description">
+                          <p>Rain. Low 2C. Winds SW at 15 to 30 km/h. Chance of rain 90%</p>
+                       </div> 
+                       <div class="weekends_forecast-detail-indicator">
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/water.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/uv_index.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Humidity</p>
+                                      <h3>74%</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>UV Index</p>
+                                      <h1>0 of 10</h1>
+                                  </div>
+                              </div>
+                          </div>
+          
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/sunrise.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/sunset.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Sunrise</p>
+                                      <h3>8:30 am</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>Sunset</p>
+                                      <h3>06:35 pm</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div> 
+                    </div>
+     
+                    <div class="weekends_forecast-detail-header-index">
+                       <div class="weekends_forecast-detail-header">
+                          <h2><span class="weekend_and_week">Sun 31</span> | Night</h2>
+                          <div class="weekends_forecast-detail-header-part">
+                             <div class="temprature_info">
+                                   <h1>2°</h1>
+                                   <img src="./img/rain.png" alt="">
+                             </div>
+                          </div>
+                          <div class="weekends_forecast-detail-header-part">
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/water.png" alt="">
+                                   <p>94%</p>
+                                </div>
+                                <div class="weekends_forecast-detail-header-part-small">
+                                   <img src="./img/signs/wind_blue.png" alt="">
+                                   <p>SW 27 km/h</p>
+                                </div>  
+                          </div>
+                       </div>  
+                       <div class="weekends_forecast-detail-description">
+                          <p>Rain. Low 2C. Winds SW at 15 to 30 km/h. Chance of rain 90%</p>
+                       </div>
+     
+                       <div class="weekends_forecast-detail-indicator">
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/water.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/uv_index.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Humidity</p>
+                                      <h3>74%</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>UV Index</p>
+                                      <h3>0 of 10</h3>
+                                  </div>
+                              </div>
+                          </div>
+          
+                          <div class="weekends_forecast-detail-indicator-part">
+                              <div class="each_part-icons">
+                                  <img class="each_part-icon" src="./img/signs/moonrise.png" alt="">
+                                  <img class="each_part-icon" src="./img/signs/moonset.png" alt="">
+                              </div>
+          
+                              <div class="each_part-info">
+                                  <div class="each_part-info-text">
+                                      <p>Moonrise</p>
+                                      <h3>07:45 pm</h3>
+                                  </div>
+                                  <div class="each_part-info-text">
+                                      <p>Moonset</p>
+                                      <h3>01:35 pm</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <img class="hide_indicator" id="show_days" src="./img/signs/show_less-blue.png" alt="">
+                 </div>
+             </div>
 
-                <div class="weekends_forecast-table-weather">
-                    <img src="./img/rain.png" alt="">
-                    <h2>Am Light Rain</h2>
-                </div>
-                <p><i class="fas fa-tint"></i>82%</p>
-                <p><i class="fas fa-wind"></i>SW 30 km/h</p>
-                <a href="">
-                    <img class="show_more" src="./img/signs/show-more.png" alt="">
-                </a>
-            </div>
+             <!-- Table part -->
+              <div class="weekend_forecast-table">
+                 <div class="weekend_forecast-table-part">
+                    <h2 class="weekend_and_week">Sun 31</h2>
+                 </div>
+                 <div class="weekend_forecast-table-part">
+                    <h1><span>13°</span>/10°</h1>
+                 </div>
+                 <div class="weekend_forecast-table-part flex">
+                    <img src="./img/rainy-day.png" alt="">
+                    <p>Mostly Cloudy</p>
+                 </div>
+                 <div class="weekend_forecast-table-part flex">
+                    <img src="./img/signs/drop.png" alt="">
+                    <h4>56%</h4>
+                 </div>
+                 <div class="weekend_forecast-table-part flex display_none">
+                    <img src="./img/signs/wind_blue.png" alt="">
+                    <h4>SW 30 km/h</h4>
+                 </div>
+                 <div class="weekend_forecast-table-part">
+                    <img class="show_indicator" src="./img/signs/show_more-blue.png" alt="">
+                 </div>
+              </div>
+           </div>
 
-        </div>
-    </div> <!-- /weekends_forecast -->
+       </div>
+   </div>
 </div>
 
-
 <!-- Footer -->
-<footer class="footer">
-    <div class="footer_container">
-        <div class="footer_author">
-            <p>This Website Created By Fariz Khuramov</p>
-        </div>
-        <div class="footer_contacts">
-            <h2>CONTACTS</h2>
-            <p>Phone: +7926 777-12-70</p>
-            <p>Email: fariz1998pro@gmail.com</p>
-        </div>
-        <div class="footer_social">
-            <h2>SOCIAL NETWORKS</h2>
-            <div class="footer_social-logo">
-                <a href="">
-                    <img src="./img/facebook.png" alt="">
-                </a>
-                <a href="">
-                    <img src="./img/instagram.png" alt="">
-                </a>
-                <a href="">
-                    <img src="./img/twitter.png" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-</footer>
+<div class="footer_container"></div>
+   <footer class="footer">
+      <div class="footer_menu">
+         <h2>Sitemap</h2>
+         <a href="index.html">Home</a>
+         <a href="hours.html">Hourly</a>
+         <a href="10day.html">10 Day</a>
+         <a href="weekends.html">Weekend</a>
+      </div>
+      <div class="footer_contacts">
+         <h2>CONTACTS</h2>
+         <p><span>Phone:</span> +7926 777-12-70</p>
+         <p><span>Email:</span> fariz1998pro@gmail.com</p>
+      </div>
+      <div class="footer_social">
+         <h2>SOCIAL NETWORKS</h2>
+         <div class="footer_social-logo">
+            <a href="">
+                  <img src="./img/facebook.png" alt="">
+            </a>
+            <a href="">
+                  <img src="./img/instagram.png" alt="">
+            </a>
+            <a href="">
+                  <img src="./img/twitter.png" alt="">
+            </a>
+         </div>
+      </div> 
+   </footer>
+</div>
 
+<script src="./js/index.js"></script>
+<script src="./js/weekends.js"></script>
 </body>
 </html>
