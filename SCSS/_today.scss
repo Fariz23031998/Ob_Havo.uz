@@ -1,0 +1,598 @@
+.btn {
+    margin-bottom: 5px;
+    font-size: $fz;
+    background-color: $blueBtn;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: background .5s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $orangeBright;
+    }
+
+    @include responsive (bigPhone) {
+        padding: 5px 15px;
+    }
+
+    @include responsive (phone) {
+        padding: 3px 12px;
+    }
+}
+
+
+
+
+.today_weather {
+   font-size: 1px;
+}
+
+.today_weather-frame {
+    margin-top: 70em;
+    @include dFlexJS(flex-start);
+    font-size: 1px;
+
+    @include responsive(bigDesktop) {
+        padding: 0px 150px;
+    }
+
+    @include responsive(desktop) {
+        padding: 0px 50px;
+    }
+
+    @include responsive (tabHorizon) {
+        font-size: .7px;
+    }
+
+    @include responsive (tab) {
+        font-size: .5px;
+    }
+
+    @include responsive (bigPhone) {
+        padding: 0px 0px;
+        margin-top: 25px;
+        font-size: .4px;
+    }
+
+    @include responsive (middlePhone) {
+        font-size: .3px;
+    }
+
+    @include responsive(phone) {
+        @include dFlexJS(center);
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+        font-size: .5px;
+    }
+
+    @include responsive (smallPhone) {
+        font-size: .4px;
+    }
+
+    .today_weather-left {
+        @include responsive(phone) {
+            margin-bottom: 30px;
+        }
+        transform: translateY(-50px);
+        @include responsive (tab) {
+            transform: translateY(-20px);
+        }
+        h2 {
+            font-size: $headerBigfz;
+        }
+        .special {
+            color: $orangeBright;
+        }
+        h1 {
+            font-size: $h1Bigfz;
+            line-height: 0;
+        }
+        p {
+            font-size: $fz;
+        }
+    }
+    .today_weather-right {
+        margin-top: 0px;
+        @include dFlexColumn(center);
+        img {
+            width: 250em;
+        }
+        h1 {
+            font-size: $h1Bigfz;
+        }
+    }
+}
+
+// Today Forecast
+
+.today_forecast-frame {
+    margin-bottom: 30px;
+    padding: 5px 50px;
+    background-color: $blueLight;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 3px 4px 23px $blackLight;
+    font-size: 1px;
+
+    @include responsive (tabHorizon) {
+        font-size: .7px;
+    }
+
+    @include responsive (tab) {
+        font-size: 1px;
+    }
+
+    @include responsive (bigPhone) {
+        padding: 5px 0;;
+        font-size: .7px; 
+    }
+
+    @include responsive (middlePhone) {
+        padding: 5px 15px;
+        font-size: .7px;
+    }
+
+    @include responsive (smallPhone) {
+        padding: 3px 12px;
+        font-size: .5px;
+    }
+
+
+    h2 {
+        font-size: $fz;
+        font-weight: normal;
+    }
+    .today_forecast-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        @include responsive (tab) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include responsive (phone) {
+         grid-template-columns: 1fr;
+        }
+
+        .today_forecast-part-day {
+            border-right: 1px solid #eee;
+            @include responsive (tab) {
+               border-bottom: 1px solid #eee;
+            }
+
+            @include responsive (phone) {
+               border-bottom: 1px solid #eee;
+            }
+
+            &.now {
+                h1 {
+                  color: $orangeBright;
+                }
+                h2 {
+                  color: #fff;
+                  opacity: 1;
+                }
+            }
+
+            &:first-child {
+               @include responsive (phone) {
+                  border-right: none;
+               }
+            }
+            
+            &:last-child {
+               border: none;
+               padding: 0;
+            }
+
+            &:nth-child(2) {
+               @include responsive (tab) {
+                  border-right: none;
+               }
+            }
+
+            &:nth-child(3) {
+               @include responsive (tab) {
+                  border-bottom: none;
+               }
+
+               @include responsive (phone) {
+                  border-right: none;
+                  border-bottom: 1px solid #eee;
+               }
+            }
+
+            h2 {
+               color: $blackLight;
+               opacity: 1;
+            }
+            h1 {
+                font-size: $h1fz;
+                line-height: .5;
+                font-weight: normal;
+            }
+            img {
+                width: 100em;
+            }
+            p {
+                font-size: $bigfz;
+                line-height: 0%;
+                span {
+                  font-size: 24px;
+                  color: $blueBright;
+                  margin-right: 10px;
+                  line-height: 0;
+                  
+                  @include responsive (bigPhone) {
+                     font-size: 18px;
+                  }
+
+                  @include responsive (middlePhone) {
+                     margin-right: 4px;
+                     font-size: 16px;
+                  }
+                }
+            }
+        }
+    }
+}
+
+// Today weather details
+.today_weather-detail {
+    padding: 10px 40px;
+    background-color: #fff;
+    border-radius: 25px;
+    font-size: 1px;
+
+    @include responsive (tabHorizon) {
+        font-size: .7px;
+    }
+
+    @include responsive (tab) {
+        font-size: .5px;
+    }
+
+    @include responsive (bigPhone) {
+        padding: 5px 30px;
+        font-size: .8px;
+    }
+
+    @include responsive (middlePhone) {
+        font-size: .5px;
+    }
+
+    @include responsive (smallPhone) {
+        padding: 5px 10px;
+        font-size: .4px;
+    }
+
+    .today_weather-deatil-header {
+        h2 {
+            font-size: $bigfz;
+            color: #000;
+            @include responsive(bigPhone) {
+                font-size: fz;
+            }
+        }
+
+        h1 {
+            font-size: $h1fz;
+            color: $orangeBright;
+        }
+        p {
+            color: #000;
+            font-size: $fz;
+        }
+    }
+}
+
+.today_weather-detail-content {
+    display: flex;
+    justify-content: space-between;
+    color: $blackLight;
+    text-align: right;
+
+    @include responsive(bigPhone) {
+        flex-direction: column;
+    }
+    
+    .today_weather-content-part {
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+
+        @include responsive(bigPhone) {
+            width: 100%;
+        }
+
+        p {
+            font-size: $fz;
+            line-height: 1.5;
+        }
+            .description_part {
+                display: flex;
+                justify-content: space-around;
+
+                .description_signs {
+                    margin: 45em 10em;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    img {
+                        width: 40em;
+                    }
+            }
+
+            .indicator_part {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+// Hourly Forecast
+.hourly_forecast {
+    margin-top: 30px;
+    padding: 0px 25px;
+    background-color: $bgBlue;
+    border-radius: 25px;
+    font-size: 1px;
+
+    @include responsive (tabHorizon) {
+        font-size: .7px;
+    }
+
+    @include responsive (bigPhone) {
+        padding: 0px 15px;
+        font-size: .5px;
+    }
+
+    @include responsive (middlePhone) {
+        font-size: .5px;
+    } 
+
+    @include responsive (smallPhone) {
+        padding: 0px 10px;
+        font-size: .5px;
+        text-align: center;
+    }
+
+
+    h2 {
+        font-size: $fz;
+        font-weight: normal;
+    }
+}
+
+.hourly_forecast-content {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+
+    @include responsive(tab) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include responsive(middlePhone) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(smallPhone) {
+      grid-template-columns: 1fr;
+    }
+
+    .hourly_forecast-content-column {
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+
+            &:last-child {
+                border-right: 0;
+                padding: 0;
+            }
+
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                @include responsive(tab) {
+                  border-bottom: none;  
+                }
+            }
+
+            &:nth-child(4) {
+               @include responsive(middlePhone) {
+                  border-left: 1px solid #ccc;
+                  border-bottom: 1px solid #ccc;
+               }
+            }
+
+            &:nth-child(2),
+            &:nth-child(4),
+            &:nth-child(6) {
+               @include responsive(middlePhone) {
+                  border-right: none;
+               }
+            }
+
+            &:nth-child(3) {
+                @include responsive(tab) {
+                    border-right: none;
+                }
+            }
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5) {
+               @include responsive(smallPhone) {
+                  border-right: none;
+                  border-left: none;
+                  border-bottom: 1px solid #eee;
+               }
+            }
+    
+            h2 {
+                font-size: $fz;
+                font-weight: normal;
+            }
+    
+            h1 {
+                font-size: $h1fz;
+                color: $orangeBright;
+                line-height: 0;
+            }
+    
+            img {
+                width: 100em;
+            }
+    
+            p {
+                font-size: $fz;
+                i {
+                    margin-right: 3px;
+                    font-size: 16px;
+                    
+                    @include responsive(bigPhone) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+// Daily Forecast
+.daily_forecast {
+    margin-top: 30px;
+    padding: 0 25px;
+    max-height: 655px;
+    background-color: #fff;
+    border-radius: 25px;
+    color: $blackLight;
+    font-size: 1px;
+    transition: width .5s ease;
+    position: relative;
+
+    &.show_daily-forecast {
+       max-height: 2000px;
+    } 
+    
+    @include responsive (tabHorizon) {
+        font-size: .7px;
+    }
+
+    @include responsive (tab) {
+      overflow-x: scroll;
+    }
+
+    @include responsive (bigPhone) {
+        padding: 0px 15px;
+        font-size: .7px;
+    }
+
+    @include responsive (middlePhone) {
+        font-size: .7px;
+    } 
+
+    @include responsive(phone) {
+        text-align: center;
+        padding: 0px 10px;
+        overflow-y: hidden;
+    }
+
+    @include responsive (smallPhone) {
+        font-size: .7px;
+    }
+
+
+    .daily_forecast-header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+
+        h2 {
+         font-size: $fz;
+        }
+
+        #more {
+         display: none;
+         background: none;
+         border: none;
+
+         &.rotate_180 {
+            transform: rotateX(180deg);
+         }
+
+         @include responsive(phone) {
+            display: block;
+         }
+   
+         img {
+            width: 40px;
+            height: 100%;
+         }
+      }
+    }
+}
+
+.daily_forecast-content {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+
+    @include responsive (phone) {
+      grid-template-columns: 1fr;
+    }
+
+    @include responsive(bigPhone) {
+        margin-bottom: 5px;
+    }
+
+    .daily_forecast-content-column {
+        border-right: 2px solid #ccc;
+        text-align: center;
+
+        @include responsive (tab) {
+            padding: 0 50px;
+        }
+
+        @include responsive (phone) {
+         border-bottom: 1px solid #ccc;
+         border-right: none;
+        }
+
+
+        &:last-child {
+            border-right: 0;
+        }
+
+        h2 {
+            font-size: $fz;
+        }
+
+        h1 {
+            font-size: $h1fz;
+            color: $orangeBright;
+            line-height: 0;
+        }
+
+        img {
+            width: 100em;
+        }
+
+        p {
+            font-size: $fz;
+            i {
+                font-size: 16px;
+                color: $blueBright;
+            }
+        }
+    }
+}
+

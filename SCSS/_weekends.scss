@@ -1,0 +1,183 @@
+.weekends_forecast {
+    padding: 0px 1.5rem;
+    color: $blackP;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 50px 2px $blueDark;
+
+    .weekends_forecast-header {
+        h2 {
+            font-size: 2rem;
+            color: $blackP;
+            font-weight: 400;
+
+            span {
+                color: $orangeBright;
+                font-size: 3rem;
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: $blueGray;
+        }
+    }
+}
+
+.weekends_forecast-detail {
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .main_indicators {
+        display: flex;
+        justify-content: space-between;
+        .main_indicators-part {
+            h2 {
+                font-size: 2rem;
+                color: #000;
+            }
+
+            &-temp {
+                display: grid;
+                grid-template-columns: 1fr 1fr 2fr;
+                align-items: center;
+                grid-gap: 0;
+                h1 {
+                    font-size: 3rem;
+                    color: $orangeBright;
+                    font-weight: normal;
+                    text-align: center;
+                }
+
+                img {
+                    width: 4rem;
+                }
+
+                .humidity_wind {
+                    p {
+                        font-size: 2rem;
+                        color: $orangeBright;
+                        line-height: 0;
+
+                        i {
+                            color: $blueBright;
+                        }
+                    }
+                }
+            }
+
+            a {
+                img {
+                    width: 2rem;
+                    transform: translateY(2.5rem);
+                }
+            }
+        }
+    }
+
+    .descriptions {
+        display: flex;
+        justify-content: space-between;
+        width: 82%;
+
+        .descriptions_part {
+            width: 40%;
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .indicators_addition {
+        .indicators_addition-part {
+            padding: 0 3rem;
+            display: grid;
+            grid-template-columns: repeat(2, 17rem);
+            justify-content: space-between;
+            border: 1px solid #ccc;
+            margin-bottom: 2rem;
+
+            &-index {
+                display: flex;
+                align-items: center;
+
+                &-text {
+                    h1 {
+                        font-size: 3rem;
+                        font-weight: normal;
+                        color: $orangeBright;
+                        margin-left: 1rem;
+                    }
+
+                    p {
+                        font-size: 2rem;
+                        color: $orangeBright;
+                    }
+                }
+
+                img {
+                    margin-right: 3rem;
+                    width: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.weekends_forecast-tables {
+    .weekends_forecast-tables-header {
+        font-size: 3rem;
+        color: $blackP;
+        font-weight: 400;
+        border-bottom: 1px solid #ccc;
+        padding: 2rem 0;
+        margin: 0;
+    }
+
+    .weekends_forecast-table {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        h2 {
+            font-weight: 400;
+            font-size: 2rem;
+            color: $blackP;
+        }
+
+        h1 {
+            span {
+                font-size: 3rem;
+            }
+            color: $orangeBright;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+        .weekends_forecast-table-weather {
+            display: flex;
+            align-items: center;
+            img {
+                width: 4rem;
+                height: 80%;
+                margin-right: 0.5rem;
+            }
+        }
+
+        p {
+            color: $orangeBright;
+            font-size: 2rem; 
+
+            i {
+                color: $blueBright;
+                margin-right: .3rem;
+            }
+        }
+
+        .show_more {
+            width: 3rem;
+            height: 100%;
+        }
+    }
+}

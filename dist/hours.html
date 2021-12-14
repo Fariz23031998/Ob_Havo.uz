@@ -1,0 +1,2922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fc64a5b3aa.js" crossorigin="anonymous"></script>
+    <title>Ob-havo.UZ</title>
+</head>
+
+<body class="hours" id="body">
+<!-- Header -->
+<header class="header" id="header">
+   <div class="header_container">
+       <div class="header_first-row">
+           <div class="open_menu" id="openMenu">
+              <img src="./img/signs/menu.png" alt="">
+           </div>
+           <div class="close_menu" id="closeMenu">
+              <img src="./img/signs/cancel.png" alt="">
+           </div>
+           <div class="header_logo" id="headerLogo">
+               <img class="header_logo-img" src="./img/header_logo.png" alt="">
+           </div>
+           <form class="header_search">
+               <input id="searchBar" type="text" placeholder="Enter City">
+                 <a class="search" href="#" id="searchButton">
+                    <i class="fas fa-search"></i>
+                 </a>
+               </input>
+           </form>
+           
+           <div class="header_temp-detector" id="header_temp-detector">
+               <p>Samarkand</p>
+               <h1>13°</h1>
+               <img src="./img/rainy-day.png" alt="">
+           </div>
+       </div>
+   </div>
+</header>
+<!-- Nav -->
+<nav class="nav" id="nav"> <!-- class="nav_menu" -->
+  <div class="header_container">
+     <div class="nav_inside">
+        <a href="index.html" class="nav_links">Today</a>
+        <a href="hours.html" class="nav_links active">Hourly</a>
+        <a href="10day.html" class="nav_links">10 Day</a>
+        <a href="weekends.html" class="nav_links">Weekend</a>
+  
+        <div class="nav_info" id="navInfo">
+           <div class="nav_info_author">
+               <p>This Website Created By Fariz Khuramov</p>
+           </div>
+           <div class="nav_info-contacts">
+               <h2>CONTACTS</h2>
+               <p>Phone: +7926 777-12-70</p>
+               <p>Email: fariz1998pro@gmail.com</p>
+           </div>
+           <div class="nav_info-social">
+               <h2>SOCIAL NETWORKS</h2>
+               <div class="nav_info-social-logo">
+                   <a href="">
+                       <img src="./img/facebook.png" alt="">
+                   </a>
+                   <a href="">
+                       <img src="./img/instagram.png" alt="">
+                   </a>
+                   <a href="">
+                       <img src="./img/twitter.png" alt="">
+                   </a>
+               </div>
+           </div>
+       </div>
+  
+     </div>
+  </div> <!-- /container -->  
+</nav>
+
+<!-- Hourly Forecast -->
+<div class="main_container hours_container">
+   <div class="hours_forecast">
+
+      <div class="hours_forecast-header">
+         <p><span>Hourly Weather</span> - Samarkand, Samarkand Region, Uzbekistan</p>
+         <h4>As of 12:28 pm MSK</h4>
+         <h2>Sat, November 27</h2>
+      </div>
+
+      <!-- Tables -->
+      <div class="hours_forecast-tables">
+
+         <!-- Table 1 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>1 pm</p>
+               <h1>3°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" src="img/signs/show_less-blue.png" alt="">
+            </div>
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index showed" id="tablesForShow">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <!-- Table 2 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>2 pm</p>
+               <h1>4°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 2-->
+
+         <!-- Table 3 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>3 pm</p>
+               <h1>6°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 3-->
+
+         <!-- Table 4 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>4 pm</p>
+               <h1>8°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">32%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 4-->
+
+         <!-- Table 5 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>5 pm</p>
+               <h1>1°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">17%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 5-->
+
+         <!-- Table 6 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>6 pm</p>
+               <h1>1°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">23%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 6-->
+
+         <!-- Table 7 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>7 pm</p>
+               <h1>6°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">26%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 7-->
+
+         <!-- Table 8 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>8 pm</p>
+               <h1>9°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">30%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 8-->
+
+         <!-- Table 9 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>9 pm</p>
+               <h1>3°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 9 -->
+
+         <!-- Table 10 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>10 pm</p>
+               <h1>2°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">10%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 10-->
+
+         <!-- Table 11 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>11 pm</p>
+               <h1>5°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">25%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 11-->
+
+         <div class="hours_forecast-header">
+            <h2>Sunday, November 28</h2>
+         </div>
+
+         <!-- Table 12 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>12 am</p>
+               <h1>7°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">25%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 12-->
+
+         <!-- Table 13 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>1 am</p>
+               <h1>5°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">21%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 13-->
+
+         <!-- Table 14 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>2 am</p>
+               <h1>3°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">23%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 14-->
+
+         <!-- Table 15 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>3 am</p>
+               <h1>12°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">29%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 15-->
+
+         <!-- Table 16 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>4 am</p>
+               <h1>5°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">25%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 16-->
+
+         <!-- Table 17 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>5 am</p>
+               <h1>4°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">28%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 17-->
+
+         <!-- Table 18 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>6 am</p>
+               <h1>9°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">29%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 18-->
+
+         <!-- Table 19 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>7 am</p>
+               <h1>1°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">31%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 19-->
+
+         <!-- Table 20 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>8 pm</p>
+               <h1>3°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 20-->
+
+         <!-- Table 21 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>9 am</p>
+               <h1>8°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">26%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 21-->
+
+         <!-- Table 22 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>10 am</p>
+               <h1>1°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">23%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 22-->
+
+         <!-- Table 23 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>11 am</p>
+               <h1>8°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">21%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 23-->
+
+         <!-- Table 24 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>12 pm</p>
+               <h1>3°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 24-->
+
+         <!-- Table 25 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>1 pm</p>
+               <h1>3°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 25 -->
+
+         <!-- Table 26 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>2 pm</p>
+               <h1>7°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">23%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 26 -->
+
+         <!-- Table 27 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>3 pm</p>
+               <h1>2°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">21%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 27 -->
+
+         <!-- Table 28 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>4 pm</p>
+               <h1>6°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">29%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 28 -->
+
+         <!-- Table 29 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>5 pm</p>
+               <h1>3°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 29 -->
+
+         <!-- Table 30 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>6 pm</p>
+               <h1>1°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">15%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 30 -->
+
+         <!-- Table 31 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>7 pm</p>
+               <h1>2°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 31 -->
+
+         <!-- Table 32 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>8 pm</p>
+               <h1>5°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">26%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 32-->
+
+         <!-- Table 33 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>9 pm</p>
+               <h1>8°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">18%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 33-->
+
+         <!-- Table 34 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>10 pm</p>
+               <h1>3°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 34 -->
+
+         <!-- Table 35 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>11 pm</p>
+               <h1>5°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 35 -->
+
+         <div class="hours_forecast-header">
+            <h2>Monday, November 29</h2>
+         </div>
+
+         <!-- Table 36 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>12 am</p>
+               <h1>7°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">22%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 36 -->
+
+         <!-- Table 37 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>1 am</p>
+               <h1>3°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 37 -->
+
+         <!-- Table 38 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>2 am</p>
+               <h1>9°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">24%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 38 -->
+
+         <!-- Table 39 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>3 am</p>
+               <h1>3°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 39 -->
+
+         <!-- Table 40 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>4 am</p>
+               <h1>7°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">22%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 40 -->
+
+         <!-- Table 41 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>5 am</p>
+               <h1>7°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">24%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 41 -->
+
+         <!-- Table 42 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>6 am</p>
+               <h1>3°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 42 -->
+
+         <!-- Table 43 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>7 am</p>
+               <h1>6°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">31%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 43 -->
+
+         <!-- Table 44 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>8 am</p>
+               <h1>3°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 44 -->
+
+         <!-- Table 45 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>9 am</p>
+               <h1>3°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 45 -->
+
+         <!-- Table 46 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>10 am</p>
+               <h1>12°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">10%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 46 -->
+
+         <!-- Table 47 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>11 am</p>
+               <h1>3°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">20%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png"" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 47-->
+
+         <!-- Table 48 -->
+         <div class="hours_forecast-table">
+            <div class="hours_forecast-table-main">
+               <p>12 am</p>
+               <h1>11°</h1>
+               <div class="hours_forecast-table-main-part weather_desc">
+                  <img id="cloud" src="img/rainy-day.png" alt="">
+                  <p>Partly Cloudy</p>
+               </div>
+               <div class="hours_forecast-table-main-part">
+                  <img id="drop" src="img/signs/drop.png"">
+                  <p class="red">5%</p>
+               </div>
+               <div class="hours_forecast-table-main-part weather_wind">
+                  <img id="wind" src="img/signs/wind_blue.png"""">
+                  <p class="red">NW 24 km/h</p>
+               </div>
+                  <img class="icon_show" id="showLess" src="img/signs/show_more-blue.png" alt="">
+            </div>
+
+            <!-- Table Index -->
+            <div class="hours_forecast-table-index hidden">
+               
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/feels_like.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Feels Like</p>
+                     <h1>-4°</h1>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/wind_blue.png"" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Wind</p>
+                     <p class="red">NW 24 km/h</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/water.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>Humidity</p>
+                     <p class="red">89%</p>
+                  </div>
+               </div>
+
+               <div class="hours_forecast-table-index-part">
+                  <img src="img/signs/uv_index.png" alt="">
+                  <div class="hours_forecast-table-index-part-desc">
+                     <p>UV Index</p>
+                     <p class="red">0 of 10</p>
+                  </div>
+               </div>
+
+            </div>
+         </div> <!-- /Table 48-->
+
+      </div> <!-- tables-->
+
+   </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer_container">
+        <div class="footer_author">
+            <p>This Website Created By Fariz Khuramov</p>
+        </div>
+        <div class="footer_contacts">
+            <h2>CONTACTS</h2>
+            <p>Phone: +7926 777-12-70</p>
+            <p>Email: fariz1998pro@gmail.com</p>
+        </div>
+        <div class="footer_social">
+            <h2>SOCIAL NETWORKS</h2>
+            <div class="footer_social-logo">
+                <a href="">
+                    <img src="./img/facebook.png" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/instagram.png" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/twitter.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+   
+   <script src="js/index.js"></script>
+   <script src="js/hours.js"></script>
+</body>
+</html>

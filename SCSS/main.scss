@@ -1,0 +1,167 @@
+$blueBright: #002AC0;
+$blueGray: #5C56A7;
+$orangeBright: #F83F05;
+$blueLight: #00B3DF;
+$blueDark: #020812;
+$blueBtn: #0667F9;
+$blackLight: #514D4D;
+$blackP: #191818;
+$bgBlue: #0A62CA;
+$h1fz: 72em;
+$h1Bigfz: 120em;
+$headerBigfz: 64em;
+$bigfz: 48em;
+$fz: 36em;
+
+@mixin dFlexJS($alignItems) {
+    display: flex;
+    justify-content: space-between;
+    align-items: $alignItems;
+}
+
+@mixin dFlexColumn($alignItems) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: $alignItems;
+}
+
+@mixin dFlexC($alignItems) {
+    display: flex;
+    justify-content: center;
+    align-items: $alignItems;
+}
+
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == smallPhone {
+        @media only screen and (max-width: 319px) {@content};
+	}
+
+	@if $breakpoint == phone {
+        @media only screen and (max-width: 415px) {@content};
+	}
+
+    @if $breakpoint == middlePhone {
+        @media only screen and (max-width: 560px) {@content};
+    }
+
+    @if $breakpoint == bigPhone {
+        @media only screen and (max-width: 768px) {@content};
+    }
+
+    @if $breakpoint == tab {
+        @media only screen and (max-width: 1024px) {@content};
+	}
+	
+    @if $breakpoint ==  tabHorizon {
+        @media only screen and (max-width: 1366px) {@content};
+	}
+
+    @if $breakpoint ==  desktop {
+        @media only screen and (max-width: 1680px) {@content};
+	}
+
+    @if $breakpoint == bigDesktop {
+        @media only screen and (min-width: 1920px) {@content};
+	}
+}
+
+html {
+    font-size: 18px;
+
+    @include responsive(bigDesktop) {
+        font-size: 22px;
+    }
+
+    @include responsive(tabHorizon) {
+        font-size: 12px;
+    }
+
+    @include responsive(tab) {
+        font-size: 8px;
+    }
+
+    @include responsive(bigPhone) {
+        font-size: 6px;
+    }
+
+    @include responsive(middlePhone) {
+        font-size: 4px;
+    }
+
+    @include responsive(phone) {
+        font-size: 3.5px;
+    }
+
+    @include responsive(smallPhone) {
+        font-size: 2.5px;
+    }
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(180deg, $blueDark, $blueBright);
+    font-family: 'EB Garamond', serif;
+    color: #fff;
+    overflow-x: hidden;
+
+    &.hours {
+       background: #fff;
+    }
+
+    &.days {
+        background: linear-gradient(180deg, #fff, #faf9f9);
+    }
+
+    &.weekend {
+        background: #fff;
+    }
+}
+
+.main_container {
+    padding: 5px 50px;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+
+    &.hours_container {
+      border: 2px solid $orangeBright;
+      @include responsive(tab) {
+         border-width: 1px;
+      }
+    }
+
+    @include responsive(bigDesktop) {
+        padding: 5px 100px;
+        max-width: 2000px;
+    }
+
+    @include responsive(tab) {
+        padding: 5px 30px;
+    }
+
+    @include responsive(middlePhone) {
+        padding: 5px 20px;
+    }
+
+    @include responsive(phone) {
+        padding: 5px 10px;
+    }
+}
+@import './header';
+@import './hours';
+@import './today';
+@import './footer';
+@import './day-forecast';
+@import './weekends';
+
+
+
+
+

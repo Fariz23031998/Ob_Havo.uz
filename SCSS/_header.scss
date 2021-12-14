@@ -1,0 +1,330 @@
+.header {
+   background-color: $blueBright;
+   font-size: 1px;
+
+   @include responsive(bigDesktop) {
+      font-size: 1.3px;
+   }
+
+   @include responsive(desktop) {
+      font-size: .8px;
+   }
+
+   @include responsive(tabHorizon) {
+         font-size: .7px;
+   }
+
+   @include responsive(tab) {
+         font-size: .55px;
+   }
+
+   @include responsive(bigPhone) {
+         font-size: .4px;
+   }
+
+   @include responsive(middlePhone) {
+         font-size: .4px;
+   }
+
+   @include responsive(phone) {
+         font-size: .33px;
+   }
+
+   @include responsive(smallPhone) {
+         font-size: .27px;
+   }
+}
+
+.header_container {
+   padding: 0 100em;
+   margin: 0 auto;
+
+   @include responsive(bigDesktop) {
+      max-width: 1980px;
+   }
+
+   @include responsive(tabHorizon) {
+      padding: 0 60em;
+   }
+
+   @include responsive(middlePhone) {
+      padding: 30em 50em;
+   }
+   @include responsive(smallPhone) {
+         padding: 30em 30em;
+   }
+}
+
+.header_first-row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+     .header_logo-img {
+       width: 250em;
+       height: 100%;
+
+      @include responsive(bigDesktop) {
+         width: 200em;
+      }
+
+      @include responsive(phone) {
+         transform: translateX(-12px);
+      }
+     }
+
+    .header_search {
+        position: relative;
+        text-align: center;
+
+        input {
+            border-radius: .2em;
+            border: none;
+            padding: 2px 150px;
+            font-size: 30em;
+            font-family: 'Roboto', serif;
+            position: relative;
+            transition: padding .4s ease, font .4s ease;
+
+            &:focus, textarea:focus, select:focus {
+               outline: .075em solid $orangeBright;
+            }
+
+            &.expand {
+               padding: 3px 70px;
+               font-size: 30em;
+            }
+
+
+            @include responsive(tabHorizon) {
+               padding: 2px 80px;
+            }
+
+            @include responsive(tab) {
+               padding: 2px 60px;
+            }
+
+            @include responsive(bigPhone) {
+               padding: 2.5px 50px;
+            }
+
+            @include responsive(phone) {
+               padding: 0;
+               font-size: 0;
+            }
+        }
+
+        &:focus {
+            outline: none;
+        }
+            
+        .search {
+            position: absolute;
+            right: 10px;
+            top: 0;
+            border: none;
+            background: none;
+            color: $orangeBright;
+            font-size: 30px;
+
+            &.typed {
+                  font-size: 15px;
+                  color: $orangeBright;
+                  top: 0;
+            }
+
+            @include responsive(bigDesktop) {
+               font-size: 38px;
+            }
+
+            @include responsive(desktop) {
+               font-size: 28px;
+            }
+         
+            @include responsive(tabHorizon) {
+               font-size: 25px;
+            }
+         
+            @include responsive(tab) {
+               font-size: 21px;
+            }
+         
+            @include responsive(bigPhone) {
+               font-size: 15px;
+               right: 5px;
+            }
+         
+            @include responsive(phone) {
+               font-size: 18px;
+               color: #fff;
+               top: -10px;
+            }
+         
+            @include responsive(smallPhone) {
+               font-size: 16px;
+            }
+        }
+    }
+
+    .open_menu {
+      display: none;
+
+      img {
+         width: 20px;
+         height: 100%;
+      }
+
+      @include responsive(phone) {
+         display: inline-block;
+      }
+    }
+
+      .close_menu {
+      display: none;
+
+      img {
+         width: 20px;
+         height: 100%;
+      }
+   }
+}
+
+.header_temp-detector {
+   display: flex;
+   
+   @include responsive(middlePhone) {
+      justify-content: space-around;
+      align-items: center;
+      border-top: 1px solid $orangeBright;
+      // background-color: $blueDark;
+      background: linear-gradient(to left, $blueDark, $blueBright);
+   }
+
+   &.bg_main-page {
+      @include responsive(phone) {
+         background: $blueGray;
+      }
+   }
+
+  
+
+   p {
+       font-size: $bigfz;
+       line-height: 0;
+   }
+   h1 {
+       font-size: $h1fz;
+       line-height: 0;
+       color: $orangeBright;
+   }
+
+   img {
+       width: 80em;
+   }
+}
+
+// Nav
+.nav {
+   font-size: 1px;
+   background-color: $blueGray;
+   padding: 0 30em;
+   border-top: 1px solid $orangeBright;
+
+   @include responsive(bigDesktop) {
+      font-size: 1.5px;
+   }
+
+   @include responsive(desktop) {
+      font-size: .9px;
+   }
+
+   @include responsive(tabHorizon) {
+      font-size: .7px;
+   }
+
+   @include responsive(tab) {
+      font-size: .6px;
+   }
+
+   @include responsive(bigPhone) {
+      font-size: .4px;
+   }
+
+   @include responsive(middlePhone) {
+      font-size: .3px;
+   }
+
+   @include responsive(phone) {
+      display: none;
+   }
+
+   &.nav_menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(180deg, $blueDark, $blueBright);
+      position: relative;
+      top: 0;
+      align-items: center;
+      z-index: 20;
+      height: 100vh;
+      width: 100%;
+      opacity: 100%;
+   }
+
+   &.nav_menu .nav_inside {
+      display: flex;
+      flex-direction: column;
+      transform: translateY(-30px);
+   }
+
+   &.nav_menu .nav_inside .nav_info {
+      display: inline-block;
+   }
+
+   .nav_inside {
+      @include dFlexJS(center);
+
+        .nav_links {
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: $fz;
+            transition: color .3s ease, border .3s ease;
+
+            @include responsive(phone) {
+               font-size: 18px;
+               margin-bottom: 15px;
+            }
+
+            &.active {
+               color: $orangeBright;
+            }
+
+            &:hover, &.active:hover {
+               color: $orangeBright;
+               border-color: $orangeBright;
+            }
+        }
+
+        .nav_info {
+         font-size: 18px;
+         text-align: center;
+         display: none;
+         .nav_info-social-logo {
+            a {
+   
+               &:nth-child(2) img {
+                  margin: 0 25px;
+               }
+   
+            }
+               img {
+                  width: 30px;
+                  height: 100%;
+            }
+         }
+       }
+    }
+}    

@@ -1,0 +1,275 @@
+.hours_forecast {
+   font-size: 1px;
+   background-color: #fff;
+   padding: 0em 30em;
+   padding-bottom: 10em;
+   border-radius: 25em;
+
+   @include responsive(bigDesktop) {
+      font-size: 1.3px;
+   }
+
+  @include responsive(tabHorizon) {
+      font-size: .75px;
+  }
+
+  @include responsive(tab) {
+      font-size: .6px;
+      padding: 0 15em;
+      border-radius: 15em;
+  }
+
+  @include responsive(bigPhone) {
+      font-size: .6px;
+  }
+
+  @include responsive(middlePhone) {
+      font-size: .5px;
+      padding: 20em 15em;
+  }
+
+  @include responsive(phone) {
+      font-size: .4px;
+      padding: 20em 5em;
+      border-radius: 5em;
+  }
+
+  @include responsive(smallPhone) {
+      font-size: .4px;
+  }
+
+   .hours_forecast-header {
+      border-bottom: 1px solid #ccc;
+      p {
+         font-size: $fz;
+         color: $blackP;
+         span {
+            color: $orangeBright;
+            font-size: 1.33333em;
+         }
+      }
+
+      h4 {
+         color: #514D4D;
+         font-size: $fz;
+         font-weight: 400;
+         line-height: 0;
+      }
+
+      h2 {
+         font-size: $bigfz;
+         color: $blackP;
+         font-weight: 400;
+      }
+   }
+}
+
+.hours_forecast-tables {
+   font-size: 1px;
+
+   @include responsive(bigDesktop) {
+      font-size: 1.3px;
+  }
+
+  @include responsive(tabHorizon) {
+      font-size: .75px;
+  }
+
+  @include responsive(tab) {
+      font-size: .55px;
+  }
+
+  @include responsive(bigPhone) {
+      font-size: .4px;
+  }
+
+  @include responsive(middlePhone) {
+      font-size: .55px;
+  }
+
+  @include responsive(phone) {
+      font-size: .4px;
+  }
+
+  @include responsive(smallPhone) {
+      font-size: .35px;
+  }
+
+
+   .hours_forecast-table {
+
+      &:first-child .hours_forecast-table-main {
+         border: none;
+         &.border_switch {
+            border-bottom: 1px solid #ccc;
+         }
+      }
+
+      &-main {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         border-bottom: 1px solid #ccc;
+
+         &.border_switch {
+            border: none;
+         }
+
+         p {
+            font-size: $fz;
+            color: $blackP;
+         }
+
+         h1 {
+            font-size: $bigfz;
+            color: $orangeBright;
+         }
+
+         &-part {
+            display: flex;
+            align-items: center;
+
+            &.weather_desc {
+               p {
+                  @include responsive(middlePhone) {
+                     display: none;
+                  }
+               }
+            }
+
+            &.weather_wind {
+               @include responsive(middlePhone) {
+                  display: none;
+               }
+            }
+
+            img {
+               margin-right: 5em;
+            }
+
+            #cloud {
+               width: 75em;
+               height: 75em;
+            }
+
+            #drop {
+               width: 24em;
+               height: 100%;
+            }
+
+            #wind {
+               width: 50em;
+               height: 100%;
+            }
+
+            p {
+               font-size: $fz;
+               color: $blackP;
+            }
+
+            .red {
+               color: $orangeBright;
+               font-size: $fz;
+            }
+         }
+
+         .icon_show {
+            width: 50em;
+            height: 100%;
+            cursor: pointer;
+
+            &.rotate {
+               transform: rotateX(180deg);
+            }
+
+            @include responsive(middlePhone) {
+               width: 40em;
+            }
+         }
+      }
+
+      &-index {
+         position: relative;
+         display: none;
+         grid-template-columns: repeat(4, 1fr);
+         background-color: #eee;
+         margin: 0;
+         padding: 0;
+         border: 1px solid $orangeBright;
+         border-radius: 5px;
+
+         &::after {
+            display: none;
+            content: '';
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            right: 10%;
+            background-color: $orangeBright;
+            width: 80%;
+            height: 1px;   
+         }
+
+         &::after {
+            @include responsive(middlePhone) {
+               display: inline-block;
+            }
+         }
+
+         @include responsive(middlePhone) {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0;
+            margin: 0;
+         }
+
+         &.showed {
+            display: grid;
+         }
+
+         @include responsive(tab) {
+            padding: 0 15em;
+            margin: 0 25em;
+        }
+
+        @include responsive(phone) {
+            padding: 5em;
+            margin: 0 5em;
+        }
+
+
+         &-part {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+
+            img {
+               width: 50em;
+               height: 50em;
+               margin-right: 25em;
+               @include responsive(tab) {
+                  margin-right: 12.5em;
+              }
+            }
+   
+            &-desc {
+               p {
+                  font-size: $fz;
+                  color: $blackP;
+               }
+   
+               h1 {
+                  font-size: $bigfz;
+                  color: $orangeBright;
+               }
+   
+               .red {
+                  color: $orangeBright;
+               }
+            }
+         }
+      }
+
+   }
+}
+
